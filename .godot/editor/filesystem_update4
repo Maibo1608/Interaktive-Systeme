@@ -1,0 +1,5 @@
+res://Scenes/player.tscn
+res://Scripts/player.gd
+res://Scenes/world.tscn
+res://Textures/background.tres
+res://Textures/background.gdshader
