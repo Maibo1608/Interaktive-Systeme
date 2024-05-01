@@ -1,3 +1,7 @@
 res://Scenes/world.tscn
-res://Scenes/player.tscn
+res://Scripts/world.gd
+res://Scenes/World.tscn
+res://Scenes/Enemy.tscn
+res://Scripts/enemy.gd
+res://Scenes/Player.tscn
 res://Scripts/player.gd

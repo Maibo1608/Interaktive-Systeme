@@ -34,3 +34,7 @@ func _process(delta):
 		visuals.flip_v = false
 	# See the note below about boolean assignment.
 		visuals.flip_h = velocity.x < 0
+
+
+func _on_area_2d_body_entered(body):
+	body.queue_free()

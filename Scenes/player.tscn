@@ -112,18 +112,30 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
-size = Vector2(58, 58)
+size = Vector2(30, 57)
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 0
 script = ExtResource("1_jfwkt")
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"Run"
+animation = &"Idle"
+frame_progress = 0.265055
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(2, 35.5)
 shape = SubResource("RectangleShape2D_vuybb")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, 35.5)
+shape = SubResource("RectangleShape2D_vuybb")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
