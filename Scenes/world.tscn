@@ -1,13 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
-[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/Player.tscn" id="2_ejwty"]
+[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/player.tscn" id="2_ejwty"]
 
 [node name="World" type="Node"]
 script = ExtResource("1_8pu83")
 
 [node name="Player" parent="." instance=ExtResource("2_ejwty")]
 position = Vector2(576, 337)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position_smoothing_enabled = true
 
 [node name="EnemyTimer" type="Timer" parent="."]
 wait_time = 2.0
