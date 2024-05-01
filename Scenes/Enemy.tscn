@@ -74,7 +74,7 @@ script = ExtResource("1_0vnk1")
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_66c60")
 animation = &"Idle"
-frame_progress = 0.980312
+frame_progress = 0.756229
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -174,7 +174,7 @@ script = ExtResource("1_jfwkt")
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
 animation = &"Attack 1"
-frame_progress = 0.621671
+frame_progress = 0.43213
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(2, 35.5)
