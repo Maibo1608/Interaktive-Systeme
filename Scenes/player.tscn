@@ -1,8 +1,33 @@
-[gd_scene load_steps=20 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=27 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
+[ext_resource type="Texture2D" uid="uid://d3402dpcwovbs" path="res://Textures/Samurai/Attack_1.png" id="2_p84xu"]
 [ext_resource type="Texture2D" uid="uid://cmakelkbqfjmn" path="res://Textures/Samurai/Run.png" id="3_audvp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqs1h"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrdkc"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2j3s"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7y6va"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_al85v"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x20j8"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_86dnr"]
 atlas = ExtResource("2_64nu8")
@@ -62,6 +87,29 @@ region = Rect2(896, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ier7n"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqs1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrdkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2j3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7y6va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_al85v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x20j8")
+}],
+"loop": true,
+"name": &"Attack 1",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_86dnr")
@@ -125,8 +173,8 @@ script = ExtResource("1_jfwkt")
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"Idle"
-frame_progress = 0.265055
+animation = &"Attack 1"
+frame_progress = 0.621671
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(2, 35.5)
