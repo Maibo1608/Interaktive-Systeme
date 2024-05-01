@@ -1,16 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714568995
+::res://::1714583914
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
-::res://Scenes/::1714570003
-Enemy.tscn::PackedScene::4745185866005039247::1714568605::0::1::::<><>::res://Scripts/enemy.gd<>uid://df37ougrkiftg::::res://icon.svg
-Player.tscn::PackedScene::5321099350856209789::1714570003::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png
-World.tscn::PackedScene::6507687058413574821::1714568790::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/player.tscn
-::res://Scripts/::1714559167
-enemy.gd::GDScript::-1::1714559167::0::1::::<>RigidBody2D<>::
-player.gd::GDScript::-1::1714559167::0::1::::<>CharacterBody2D<>::
+::res://animations/::1714582887
+attack 1.res::Animation::8079697904435717967::1714582887::0::1::::<><>::
+::res://Scenes/::1714583900
+Enemy.tscn::PackedScene::4745185866005039247::1714583875::0::1::::<><>::res://Scripts/enemy.gd<>uid://esbyh0s85a3r::::res://Textures/Fire_Spirit/Idle.png<>uid://barv8ftauu8ge::::res://Textures/Fire_Spirit/Idle_2.png<>res://Scripts/MyHurtBox.gd
+Player.tscn::PackedScene::5321099350856209789::1714583875::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>uid://dnd4pdkb3bxh4::::res://animations/attack 1.res<>res://Scripts/MyHitBox.gd
+World.tscn::PackedScene::6507687058413574821::1714583900::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn
+::res://Scripts/::1714583863
+enemy.gd::GDScript::-1::1714583676::0::1::::<>RigidBody2D<>::
+MyHitBox.gd::GDScript::-1::1714583263::0::1::::MyHitBox<>Area2D<>::
+MyHurtBox.gd::GDScript::-1::1714583863::0::1::::MyHurtBox<>Area2D<>::
+player.gd::GDScript::-1::1714583551::0::1::::<>CharacterBody2D<>::
 world.gd::GDScript::-1::1714559167::0::1::::<>Node<>::
 ::res://Textures/::1714570060
-::res://Textures/Fire_Spirit/::1701504565
+::res://Textures/Fire_Spirit/::1714570076
 Attack.png::CompressedTexture2D::6676840466420861333::1689049806::1714570076::1::::<><>::
 Charge.png::CompressedTexture2D::5816889772558766715::1689050393::1714570075::1::::<><>::
 Dead.png::CompressedTexture2D::5537789830324757483::1689050287::1714570076::1::::<><>::
@@ -22,7 +26,7 @@ Idle_2.png::CompressedTexture2D::2422849385554660340::1689049477::1714570076::1:
 Run.png::CompressedTexture2D::8765511286175935017::1689049339::1714570076::1::::<><>::
 Shot.png::CompressedTexture2D::8883668155053671442::1689049544::1714570076::1::::<><>::
 Walk.png::CompressedTexture2D::6531938267811828880::1689049310::1714570076::1::::<><>::
-::res://Textures/Orc_Berserk/::1674649755
+::res://Textures/Orc_Berserk/::1714570076
 Attack_1.png::CompressedTexture2D::4950193116144832032::1674649473::1714570076::1::::<><>::
 Attack_2.png::CompressedTexture2D::3563376803555397450::1674649518::1714570076::1::::<><>::
 Attack_3.png::CompressedTexture2D::6891010072572079569::1674649572::1714570076::1::::<><>::
@@ -33,7 +37,7 @@ Jump.png::CompressedTexture2D::1644313603822005192::1674649630::1714570076::1:::
 Run+Attack.png::CompressedTexture2D::5109180284032663553::1674649418::1714570076::1::::<><>::
 Run.png::CompressedTexture2D::2011411661831871713::1674649354::1714570076::1::::<><>::
 Walk.png::CompressedTexture2D::5479980606013589383::1674649309::1714570076::1::::<><>::
-::res://Textures/Orc_Shaman/::1674643637
+::res://Textures/Orc_Shaman/::1714570076
 Attack_1.png::CompressedTexture2D::7334425760717170341::1674642995::1714570076::1::::<><>::
 Attack_2.png::CompressedTexture2D::2092807970390530235::1674643102::1714570076::1::::<><>::
 Dead.png::CompressedTexture2D::1528109958084064549::1674643637::1714570076::1::::<><>::
@@ -44,7 +48,7 @@ Magic_1.png::CompressedTexture2D::1200773888505386359::1674643212::1714570076::1
 Magic_2.png::CompressedTexture2D::7608580953328922921::1674643314::1714570076::1::::<><>::
 Run.png::CompressedTexture2D::9134552679603885604::1674642881::1714570076::1::::<><>::
 Walk.png::CompressedTexture2D::5623748216756213467::1674642770::1714570076::1::::<><>::
-::res://Textures/Orc_Warrior/::1705040520
+::res://Textures/Orc_Warrior/::1714570075
 Attack_1.png::CompressedTexture2D::6792791197020838129::1674644475::1714570075::1::::<><>::
 Attack_2.png::CompressedTexture2D::6927662290653047928::1674644505::1714570075::1::::<><>::
 Attack_3.png::CompressedTexture2D::6549317955815624439::1674644568::1714570075::1::::<><>::
@@ -55,7 +59,7 @@ Jump.png::CompressedTexture2D::1823839176205608455::1674644631::1714570075::1:::
 Run+Attack.png::CompressedTexture2D::6820606969146441357::1674644439::1714570075::1::::<><>::
 Run.png::CompressedTexture2D::1539577793503816647::1674644377::1714570075::1::::<><>::
 Walk.png::CompressedTexture2D::3981712311763113457::1674644269::1714570075::1::::<><>::
-::res://Textures/Plent/::1701504565
+::res://Textures/Plent/::1714570075
 Attack_1.png::CompressedTexture2D::448114786916378319::1689054819::1714570075::1::::<><>::
 Attack_2.png::CompressedTexture2D::8715094275599142638::1689054874::1714570075::1::::<><>::
 Attack_3.png::CompressedTexture2D::8988797277848725230::1689054917::1714570075::1::::<><>::
@@ -78,7 +82,7 @@ Jump.png::CompressedTexture2D::9188696253760151324::1714378688::1714378688::1:::
 Run.png::CompressedTexture2D::5615722397417794833::1714378688::1714378688::1::::<><>::
 Shield.png::CompressedTexture2D::7601787400139756263::1714378688::1714378688::1::::<><>::
 Walk.png::CompressedTexture2D::5397278709236780630::1714378688::1714378688::1::::<><>::
-::res://Textures/Skeleton/::1701504565
+::res://Textures/Skeleton/::1714570076
 Attack_1.png::CompressedTexture2D::1830653155774698587::1688898921::1714570075::1::::<><>::
 Attack_2.png::CompressedTexture2D::8410089820126745410::1688898989::1714570075::1::::<><>::
 Attack_3.png::CompressedTexture2D::5965547326700338535::1688899361::1714570075::1::::<><>::

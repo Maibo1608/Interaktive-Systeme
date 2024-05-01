@@ -1,6 +1,7 @@
 extends CharacterBody2D
-
+@onready var animation_player := $AnimationPlayer 
 @onready var visuals = $visuals
+
 
 @export var speed = 400
 var screen_size 
@@ -10,7 +11,7 @@ func _ready():
 	screen_size = get_viewport_rect().size
 
 
-func _process(delta):
+func _physics_process(delta):
 	var velocity = Vector2.ZERO
 	
 	if Input.is_action_pressed("left"):
@@ -34,6 +35,10 @@ func _process(delta):
 		visuals.flip_v = false
 	# See the note below about boolean assignment.
 		visuals.flip_h = velocity.x < 0
+	if Input.is_action_just_pressed("ui_accept"):
+		print("attack")
+		#animation_player.play("attack 1")
+		
 
 
 func _on_area_2d_body_entered(body):
