@@ -1,15 +1,17 @@
 extends RigidBody2D
 
-@onready var animation_player := $AnimationPlayer 
+@onready var visuals = $visuals
 
-var health:= 9.0
+
+var health:= 1
 var dam: = 10.0
 
 var speed := 100.0
 var player: CharacterBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	visuals.animation = "idle2"
+	visuals.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,3 +27,7 @@ func take_damage(amount: int)-> void:
 	if health <= 0:
 		print("dead body")
 		queue_free()
+
+
+func _on_hitbox_area_entered(area):
+	pass # Replace with function body.

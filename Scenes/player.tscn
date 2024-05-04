@@ -1,35 +1,9 @@
-[gd_scene load_steps=32 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=28 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
 [ext_resource type="Texture2D" uid="uid://d3402dpcwovbs" path="res://Textures/Samurai/Attack_1.png" id="2_p84xu"]
 [ext_resource type="Texture2D" uid="uid://cmakelkbqfjmn" path="res://Textures/Samurai/Run.png" id="3_audvp"]
-[ext_resource type="Animation" uid="uid://dnd4pdkb3bxh4" path="res://animations/attack 1.res" id="5_v3l6j"]
-[ext_resource type="Script" path="res://Scripts/MyHitBox.gd" id="6_w31mb"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oqs1h"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xrdkc"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n2j3s"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(256, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7y6va"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(384, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_al85v"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(512, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x20j8"]
-atlas = ExtResource("2_p84xu")
-region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_86dnr"]
 atlas = ExtResource("2_64nu8")
@@ -87,31 +61,32 @@ region = Rect2(768, 0, 128, 128)
 atlas = ExtResource("3_audvp")
 region = Rect2(896, 0, 128, 128)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqs1h"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrdkc"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2j3s"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7y6va"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_al85v"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x20j8"]
+atlas = ExtResource("2_p84xu")
+region = Rect2(640, 0, 128, 128)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_ier7n"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oqs1h")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xrdkc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n2j3s")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7y6va")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_al85v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x20j8")
-}],
-"loop": true,
-"name": &"Attack 1",
-"speed": 4.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_86dnr")
@@ -133,7 +108,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -163,55 +138,33 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oqs1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrdkc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2j3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7y6va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_al85v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x20j8")
+}],
+"loop": false,
+"name": &"melee_attack1",
+"speed": 25.0
 }]
 
-[sub_resource type="Animation" id="Animation_tsd2m"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("MyHitBox/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:animation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(-0.4),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"Attack 1"]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:frame")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_dvrj2"]
-_data = {
-"RESET": SubResource("Animation_tsd2m"),
-"attack 1": ExtResource("5_v3l6j")
-}
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lduj2"]
-size = Vector2(47, 22)
+size = Vector2(52, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
 size = Vector2(30, 57)
@@ -223,27 +176,26 @@ script = ExtResource("1_jfwkt")
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"Attack 1"
+animation = &"melee_attack1"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="visuals"]
-libraries = {
-"": SubResource("AnimationLibrary_dvrj2")
-}
+[node name="melee_attack1" type="Area2D" parent="visuals"]
+position = Vector2(0, 24)
+collision_layer = 0
+collision_mask = 2
+monitoring = false
 
-[node name="MyHitBox" type="Area2D" parent="visuals"]
-script = ExtResource("6_w31mb")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="visuals/MyHitBox"]
-position = Vector2(36.5, 24)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="visuals/melee_attack1"]
+position = Vector2(39, 0)
 shape = SubResource("RectangleShape2D_lduj2")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="collider" type="CollisionShape2D" parent="."]
 position = Vector2(2, 35.5)
 shape = SubResource("RectangleShape2D_vuybb")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="hitbox" type="Area2D" parent="."]
+collision_mask = 3
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
 position = Vector2(2, 35.5)
 shape = SubResource("RectangleShape2D_vuybb")
 
@@ -258,4 +210,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 step = 1.0
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+
+[connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
+[connection signal="body_entered" from="visuals/melee_attack1" to="." method="_on_melee_attack_1_body_entered"]
+[connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
