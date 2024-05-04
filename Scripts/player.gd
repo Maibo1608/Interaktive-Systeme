@@ -2,6 +2,11 @@ extends CharacterBody2D
 @onready var animation_player := $AnimationPlayer 
 @onready var visuals = $visuals
 
+ 
+
+const MAX_HEALTH = 100
+
+var health = 100
 
 @export var speed = 400
 var screen_size 
@@ -9,7 +14,11 @@ var screen_size
 
 func _ready():
 	screen_size = get_viewport_rect().size
-
+	$Healthbar.max_value = MAX_HEALTH
+	$Healthbar.value = health
+	
+func set_health_bar () -> void:
+	$Healthbar.value = health
 
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
@@ -41,5 +50,15 @@ func _physics_process(delta):
 		
 
 
+func damage(dam) -> void:
+	health -= dam
+	set_health_bar()
+	print("damage", dam)
+	if health <= 0:
+		print("dead")
+	
+
 func _on_area_2d_body_entered(body):
+	damage(body.dam)
 	body.queue_free()
+

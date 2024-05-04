@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714583914
+::res://::1714838799
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
 ::res://animations/::1714582887
 attack 1.res::Animation::8079697904435717967::1714582887::0::1::::<><>::
-::res://Scenes/::1714583900
-Enemy.tscn::PackedScene::4745185866005039247::1714583875::0::1::::<><>::res://Scripts/enemy.gd<>uid://esbyh0s85a3r::::res://Textures/Fire_Spirit/Idle.png<>uid://barv8ftauu8ge::::res://Textures/Fire_Spirit/Idle_2.png<>res://Scripts/MyHurtBox.gd
-Player.tscn::PackedScene::5321099350856209789::1714583875::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>uid://dnd4pdkb3bxh4::::res://animations/attack 1.res<>res://Scripts/MyHitBox.gd
-World.tscn::PackedScene::6507687058413574821::1714583900::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn
-::res://Scripts/::1714583863
-enemy.gd::GDScript::-1::1714583676::0::1::::<>RigidBody2D<>::
+::res://Scenes/::1714586488
+Enemy.tscn::PackedScene::4745185866005039247::1714585943::0::1::::<><>::res://Scripts/enemy.gd<>uid://esbyh0s85a3r::::res://Textures/Fire_Spirit/Idle.png<>uid://barv8ftauu8ge::::res://Textures/Fire_Spirit/Idle_2.png<>res://Scripts/MyHurtBox.gd
+Player.tscn::PackedScene::5321099350856209789::1714586488::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>uid://dnd4pdkb3bxh4::::res://animations/attack 1.res<>res://Scripts/MyHitBox.gd
+World.tscn::PackedScene::6507687058413574821::1714585943::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn
+::res://Scripts/::1714585824
+enemy.gd::GDScript::-1::1714585813::0::1::::<>RigidBody2D<>::
 MyHitBox.gd::GDScript::-1::1714583263::0::1::::MyHitBox<>Area2D<>::
 MyHurtBox.gd::GDScript::-1::1714583863::0::1::::MyHurtBox<>Area2D<>::
-player.gd::GDScript::-1::1714583551::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1714585824::0::1::::<>CharacterBody2D<>::
 world.gd::GDScript::-1::1714559167::0::1::::<>Node<>::
 ::res://Textures/::1714570060
 ::res://Textures/Fire_Spirit/::1714570076

@@ -1,3 +1,4 @@
+ProgressBar
 CollisionShape2D
 MyHurtBox
 MyHitBox
@@ -11,4 +12,3 @@ Node
 RigidBody2D
 AnimatedSprite2D
 CharacterBody2D
-Sprite2D
