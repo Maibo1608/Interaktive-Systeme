@@ -99,19 +99,19 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.1,
 "texture": SubResource("AtlasTexture_7nfy5")
 }, {
-"duration": 1.0,
+"duration": 0.1,
 "texture": SubResource("AtlasTexture_ovxrq")
 }, {
-"duration": 1.0,
+"duration": 0.1,
 "texture": SubResource("AtlasTexture_88yos")
 }, {
-"duration": 1.0,
+"duration": 0.1,
 "texture": SubResource("AtlasTexture_jpdac")
 }, {
-"duration": 1.0,
+"duration": 0.1,
 "texture": SubResource("AtlasTexture_upvqg")
 }],
 "loop": true,
@@ -156,7 +156,6 @@ script = ExtResource("1_0vnk1")
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_66c60")
 animation = &"die"
-metadata/_edit_lock_ = true
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)

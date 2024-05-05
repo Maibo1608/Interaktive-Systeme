@@ -176,7 +176,7 @@ script = ExtResource("1_jfwkt")
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"melee_attack1"
+animation = &"Run"
 
 [node name="melee_attack1" type="Area2D" parent="visuals"]
 position = Vector2(0, 24)
