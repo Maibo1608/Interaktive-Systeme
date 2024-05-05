@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://b8uuruy3hcybn"]
+[gd_scene load_steps=24 format=3 uid="uid://b8uuruy3hcybn"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_0vnk1"]
 [ext_resource type="Texture2D" uid="uid://esbyh0s85a3r" path="res://Textures/Fire_Spirit/Idle.png" id="2_nxpjp"]
+[ext_resource type="Texture2D" uid="uid://ck5submy20xl8" path="res://Textures/Fire_Spirit/Dead.png" id="3_7ldrh"]
 [ext_resource type="Texture2D" uid="uid://barv8ftauu8ge" path="res://Textures/Fire_Spirit/Idle_2.png" id="3_183at"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3a25"]
@@ -27,6 +28,26 @@ region = Rect2(512, 0, 128, 128)
 [sub_resource type="AtlasTexture" id="AtlasTexture_14n34"]
 atlas = ExtResource("2_nxpjp")
 region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nfy5"]
+atlas = ExtResource("3_7ldrh")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ovxrq"]
+atlas = ExtResource("3_7ldrh")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88yos"]
+atlas = ExtResource("3_7ldrh")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jpdac"]
+atlas = ExtResource("3_7ldrh")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_upvqg"]
+atlas = ExtResource("3_7ldrh")
+region = Rect2(512, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u53dh"]
 atlas = ExtResource("3_183at")
@@ -79,6 +100,26 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_7nfy5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ovxrq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88yos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jpdac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_upvqg")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_u53dh")
 }, {
 "duration": 1.0,
@@ -114,10 +155,11 @@ script = ExtResource("1_0vnk1")
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_66c60")
-animation = &"idle2"
-frame_progress = 0.150259
+animation = &"die"
 metadata/_edit_lock_ = true
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_slj47")
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]

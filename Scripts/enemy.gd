@@ -3,8 +3,11 @@ extends RigidBody2D
 @onready var visuals = $visuals
 
 
+signal killed(points)
+
 var health:= 1
 var dam: = 10.0
+@export var points = 100
 
 var speed := 100.0
 var player: CharacterBody2D
@@ -26,8 +29,14 @@ func take_damage(amount: int)-> void:
 	
 	if health <= 0:
 		print("dead body")
+		#visuals.animation = "die"
+		#visuals.play()
+		killed.emit(points)
 		queue_free()
 
 
 func _on_hitbox_area_entered(area):
 	pass # Replace with function body.
+
+
+
