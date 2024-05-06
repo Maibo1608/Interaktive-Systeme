@@ -36,10 +36,10 @@ func _physics_process(delta):
 			velocity.y += 1
 		if velocity.length() > 0:
 			velocity = velocity.normalized() * speed
-			visuals.play()
-			visuals.animation = "Run"
+			visuals.play("Run")
+			
 		else:
-			visuals.animation = "Idle"
+			visuals.play("Idle")
 		position += velocity * delta
 	move_and_slide()
 	if velocity.x != 0:
@@ -54,8 +54,7 @@ func _physics_process(delta):
 		print("attack")
 		is_attacking = true
 		melee_attack_1.monitoring = true
-		visuals.animation = "melee_attack1"
-		visuals.play()
+		visuals.play("melee_attack1")
 		
 
 
