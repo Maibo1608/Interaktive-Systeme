@@ -11,11 +11,26 @@ script = ExtResource("1_8pu83")
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(512, 512)
+motion_mirroring = Vector2(1024, 1024)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource("2_4nfn0")
 centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_4nfn0")
+centered = false
+offset = Vector2(512, 0)
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_4nfn0")
+centered = false
+offset = Vector2(512, 512)
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_4nfn0")
+centered = false
+offset = Vector2(0, 512)
 
 [node name="HUD" parent="." instance=ExtResource("3_miq2v")]
 
