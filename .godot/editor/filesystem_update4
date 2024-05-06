@@ -1,5 +1,13 @@
 res://Scenes/Enemy.tscn
-res://Scripts/enemy.gd
+res://Scenes/menu_und_co.tscn
+res://Scripts/player.gd
 res://Scenes/World.tscn
 res://Scenes/Player.tscn
-res://Scenes/menu_und_co.tscn
+res://Scripts/enemy.gd
+res://Scenes/menu_und_co.gd
+res://Scenes/main_menu.tscn
+res://Scripts/main_menu.gd
+res://Scenes/hud.tscn
+res://Scenes/hud.gd
+res://Scripts/hud.gd
+res://Scripts/world.gd

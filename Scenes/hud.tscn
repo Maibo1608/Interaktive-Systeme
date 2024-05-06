@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://bydfq20lrga8u"]
+
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_d75b4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vu3ik"]
+bg_color = Color(0.0768358, 0.0768358, 0.0768358, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q32nk"]
+font_size = 100
+font_color = Color(0.556863, 0, 0, 1)
+shadow_size = 5
+shadow_color = Color(0.275159, 3.15858e-07, 7.21961e-08, 1)
+shadow_offset = Vector2(-2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ayadn"]
+font_size = 25
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_d75b4")
+
+[node name="death_screen" type="Panel" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vu3ik")
+
+[node name="death_label" type="Label" parent="death_screen"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.5
+offset_top = -68.5
+offset_right = 235.5
+offset_bottom = 68.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "YOU DIED"
+label_settings = SubResource("LabelSettings_q32nk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -186.0
+offset_top = 30.0
+offset_right = -45.9995
+offset_bottom = 104.0
+grow_horizontal = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+
+[node name="time_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Time:
+"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="score_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Score:"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="time_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "00:00
+"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="score_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 2
+vertical_alignment = 1

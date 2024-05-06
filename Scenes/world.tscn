@@ -1,13 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyymwji00epmb"]
+[gd_scene load_steps=5 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
-[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/Player.tscn" id="2_ejwty"]
-[ext_resource type="PackedScene" uid="uid://dxkn2makd1xmc" path="res://Scenes/menu_und_co.tscn" id="3_y6seu"]
+[ext_resource type="Texture2D" uid="uid://cqhbhw0esemjn" path="res://Textures/background/grass.png" id="2_4nfn0"]
+[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/player.tscn" id="2_ejwty"]
+[ext_resource type="PackedScene" uid="uid://bydfq20lrga8u" path="res://Scenes/hud.tscn" id="3_miq2v"]
 
 [node name="World" type="Node"]
 script = ExtResource("1_8pu83")
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(512, 512)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_4nfn0")
+centered = false
+
+[node name="HUD" parent="." instance=ExtResource("3_miq2v")]
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -22,14 +35,4 @@ position = Vector2(576, 337)
 wait_time = 2.0
 autostart = true
 
-[node name="ScoreTimer" type="Timer" parent="."]
-
-[node name="StartTimer" type="Timer" parent="."]
-
-[node name="Menu" parent="." instance=ExtResource("3_y6seu")]
-
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
-[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
-[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
-[connection signal="start_game" from="Menu" to="." method="new_game"]
-[connection signal="start_game" from="Menu" to="." method="_on_menu_start_game"]

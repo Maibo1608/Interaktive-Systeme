@@ -1,5 +1,7 @@
 extends CharacterBody2D
-@onready var animation_player := $visuals/AnimationPlayer
+
+signal dying
+
 @onready var visuals = $visuals
 @onready var healthbar = $Healthbar
 @onready var melee_attack_1 = $visuals/melee_attack1
@@ -62,6 +64,7 @@ func damage(value) -> void:
 	set_health_bar()
 	print("damage", value)
 	if health <= 0:
+		dying.emit()
 		print("dead")
 	
 

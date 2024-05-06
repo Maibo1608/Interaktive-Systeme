@@ -5,7 +5,7 @@ extends RigidBody2D
 
 signal killed(points)
 
-var flag = false
+var is_dying = false
 var health:= 1
 var dam: = 10.0
 @export var points = 100
@@ -30,10 +30,9 @@ func take_damage(amount: int)-> void:
 	
 	if health <= 0:
 		print("dead body")
+		is_dying = true
 		visuals.play("die")
 		killed.emit(points)
-		if visuals.is_playing() == false:
-			queue_free()
 		
 
 
@@ -42,3 +41,8 @@ func _on_hitbox_area_entered(area):
 
 
 
+
+
+func _on_visuals_animation_finished():
+	if is_dying:
+		queue_free()

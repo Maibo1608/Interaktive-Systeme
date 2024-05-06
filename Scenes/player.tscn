@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=30 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
@@ -169,6 +169,12 @@ size = Vector2(52, 22)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
 size = Vector2(30, 57)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_443d6"]
+bg_color = Color(0.329412, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6rld"]
+bg_color = Color(0.760784, 0, 0, 1)
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 0
 collision_mask = 0
@@ -200,14 +206,14 @@ position = Vector2(2, 35.5)
 shape = SubResource("RectangleShape2D_vuybb")
 
 [node name="Healthbar" type="ProgressBar" parent="."]
-modulate = Color(0.568882, 0.22801, 0.454582, 1)
-self_modulate = Color(0.880627, 0.901592, 0.886665, 1)
 offset_left = -62.0
 offset_top = 68.0
 offset_right = 79.0
-offset_bottom = 95.0
+offset_bottom = 91.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_443d6")
+theme_override_styles/fill = SubResource("StyleBoxFlat_e6rld")
 step = 1.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
