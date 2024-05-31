@@ -1,9 +1,14 @@
-[gd_scene load_steps=30 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=39 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
 [ext_resource type="Texture2D" uid="uid://d3402dpcwovbs" path="res://Textures/Samurai/Attack_1.png" id="2_p84xu"]
 [ext_resource type="Texture2D" uid="uid://cmakelkbqfjmn" path="res://Textures/Samurai/Run.png" id="3_audvp"]
+[ext_resource type="Texture2D" uid="uid://nkqkgk3qubn7" path="res://Textures/attacks/SP301_nyknck/SP301_01.png" id="6_bko6b"]
+[ext_resource type="Texture2D" uid="uid://bvuwbrbvj0o72" path="res://Textures/attacks/SP301_nyknck/SP301_02.png" id="7_v44rb"]
+[ext_resource type="Texture2D" uid="uid://cqipsivrlmwe0" path="res://Textures/attacks/SP301_nyknck/SP301_03.png" id="8_a3jvg"]
+[ext_resource type="Texture2D" uid="uid://knuhvu5ges4j" path="res://Textures/attacks/SP301_nyknck/SP301_04.png" id="9_3acoq"]
+[ext_resource type="Texture2D" uid="uid://78f8qw0ibifa" path="res://Textures/attacks/SP301_nyknck/SP301_05.png" id="10_sjxgx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_86dnr"]
 atlas = ExtResource("2_64nu8")
@@ -163,9 +168,6 @@ animations = [{
 "speed": 25.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lduj2"]
-size = Vector2(52, 22)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
 size = Vector2(30, 57)
 
@@ -174,6 +176,165 @@ bg_color = Color(0.329412, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6rld"]
 bg_color = Color(0.760784, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_b8d8a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("attack1/animation:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("attack1:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("attack1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("attack1/melee_attack1:monitoring")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer:speed_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_fdtxm"]
+resource_name = "attack1"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("attack1/animation:frame")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.7, 0.8, 0.9, 1, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("attack1:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("attack1:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Vector2(1, 1), Vector2(-1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("attack1/melee_attack1:monitoring")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.7, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimationPlayer:speed_scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_13gsp"]
+_data = {
+"RESET": SubResource("Animation_b8d8a"),
+"attack1": SubResource("Animation_fdtxm")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k7bh6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_bko6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v44rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a3jvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3acoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sjxgx")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lduj2"]
+size = Vector2(109, 45)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 8
@@ -185,16 +346,6 @@ sprite_frames = SubResource("SpriteFrames_ier7n")
 animation = &"melee_attack1"
 frame = 5
 frame_progress = 1.0
-
-[node name="melee_attack1" type="Area2D" parent="visuals"]
-position = Vector2(0, 24)
-collision_layer = 0
-collision_mask = 2
-monitoring = false
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="visuals/melee_attack1"]
-position = Vector2(39, 0)
-shape = SubResource("RectangleShape2D_lduj2")
 
 [node name="collider" type="CollisionShape2D" parent="."]
 position = Vector2(2, 35.5)
@@ -221,6 +372,36 @@ step = 1.0
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_13gsp")
+}
+
+[node name="attack1" type="Node2D" parent="."]
+visible = false
+
+[node name="animation" type="AnimatedSprite2D" parent="attack1"]
+position = Vector2(76, 33)
+scale = Vector2(2.02522, 1.48824)
+sprite_frames = SubResource("SpriteFrames_k7bh6")
+animation = &"attack"
+flip_h = true
+
+[node name="reload" type="Timer" parent="attack1"]
+wait_time = 2.0
+autostart = true
+
+[node name="melee_attack1" type="Area2D" parent="attack1"]
+position = Vector2(0, 24)
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack1/melee_attack1"]
+position = Vector2(75.5, 7.5)
+shape = SubResource("RectangleShape2D_lduj2")
+
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
-[connection signal="body_entered" from="visuals/melee_attack1" to="." method="_on_melee_attack_1_body_entered"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="attack1/reload" to="." method="attack1"]
+[connection signal="body_entered" from="attack1/melee_attack1" to="." method="_on_melee_attack_1_body_entered"]

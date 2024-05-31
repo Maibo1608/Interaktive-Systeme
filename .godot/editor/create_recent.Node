@@ -1,5 +1,8 @@
-TileMap
+Timer
+Node2D
+AnimatedSprite2D
 AnimationPlayer
+TileMap
 Panel
 Label
 Sprite2D
@@ -9,6 +12,3 @@ VBoxContainer
 HBoxContainer
 CanvasLayer
 Button
-Timer
-Camera2D
-ProgressBar
