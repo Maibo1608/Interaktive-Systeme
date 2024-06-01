@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=40 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
@@ -167,6 +167,10 @@ animations = [{
 "name": &"melee_attack1",
 "speed": 25.0
 }]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tg74n"]
+radius = 16.0
+height = 32.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
 size = Vector2(30, 57)
@@ -337,21 +341,23 @@ animations = [{
 size = Vector2(109, 45)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(0, -56)
 collision_layer = 8
 collision_mask = 8
 script = ExtResource("1_jfwkt")
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"melee_attack1"
-frame = 5
-frame_progress = 1.0
+animation = &"Idle"
 
 [node name="collider" type="CollisionShape2D" parent="."]
-position = Vector2(2, 35.5)
-shape = SubResource("RectangleShape2D_vuybb")
+position = Vector2(1, 56)
+shape = SubResource("CapsuleShape2D_tg74n")
 
 [node name="hitbox" type="Area2D" parent="."]
+visible = false
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
