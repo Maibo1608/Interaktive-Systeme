@@ -3,6 +3,16 @@ extends Node
 @onready var player = $Player
 @onready var hud = $HUD
 
+func enemy_spawner(enemy_name, spawn_time, vector_x, vector_y ):
+	if hud.game_time >= spawn_time:
+		var preload_string = "res://Scenes/Enemies/"+ enemy_name + ".tscn"
+		var enemy = load(preload_string).instantiate()
+		var enemy_spawn= Vector2(vector_x,vector_y)
+		enemy.position = player.position + enemy_spawn.rotated(deg_to_rad(randf_range(0,360)))
+		enemy.player = player
+		enemy.killed.connect(_on_enemy_killed)
+		add_child(enemy)
+
 var score = 0
 
 # Called when the node enters the scene tree for the first time.
@@ -19,12 +29,25 @@ func new_game():
 	hud.update_score(score)
 
 func _on_enemy_timer_timeout():
-	var enemy = preload("res://Scenes/Enemy.tscn").instantiate()
-	var enemy_spawn= Vector2(400,0)
-	enemy.position = player.position + enemy_spawn.rotated(deg_to_rad(randf_range(0,360)))
-	enemy.player = player
-	enemy.killed.connect(_on_enemy_killed)
-	add_child(enemy)
+	enemy_spawner("Enemy_Flame", 2, 400, 0)
+	enemy_spawner("Enemy_Skeleton", 20, 400, 0)
+	enemy_spawner("Enemy_Orc_Warrior", 30, 400, 0)
+	enemy_spawner("Enemy_Orc_Shaman", 10, 400, 0)
+	#var enemy_flame = preload("res://Scenes/Enemies/Enemy_Flame.tscn").instantiate()
+	#var enemy_spawn= Vector2(400,0)
+	#enemy_flame.position = player.position + enemy_spawn.rotated(deg_to_rad(randf_range(0,360)))
+	#enemy_flame.player = player
+	#enemy_flame.killed.connect(_on_enemy_killed)
+	#add_child(enemy_flame)
+	#
+	#
+	#if hud.game_time >= 20:
+		#var enemy_skeleton = preload("res://Scenes/Enemies/Enemy_Skeleton.tscn").instantiate()
+		#enemy_skeleton.position = player.position + enemy_spawn.rotated(deg_to_rad(randf_range(0,360)))
+		#enemy_skeleton.player = player
+		#enemy_skeleton.killed.connect(_on_enemy_killed)
+		#add_child(enemy_skeleton)
+	
 
 func _on_enemy_killed(points):
 	score += points

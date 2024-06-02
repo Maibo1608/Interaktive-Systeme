@@ -1,5 +1,6 @@
-Node2D
 Timer
+Node
+Node2D
 AnimatedSprite2D
 AnimationPlayer
 TileMap
@@ -11,4 +12,3 @@ ParallaxBackground
 VBoxContainer
 HBoxContainer
 CanvasLayer
-Button

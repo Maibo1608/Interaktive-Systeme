@@ -1,5 +1,11 @@
 res://Scenes/World.tscn
 res://Scenes/Player.tscn
-res://Scenes/Enemy.tscn
 res://Scenes/main_menu.tscn
 res://Scenes/hud.tscn
+res://Scenes/Enemies/Enemy_Flame.tscn
+res://Scenes/Enemies/Enemy_Skeleton.tscn
+res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
+res://Scenes/Enemies/Enemy_Orc_Warrior.tscn
+res://Scenes/EnemySpawner.tscn
+res://Scripts/world.gd
+res://Scripts/enemy.gd

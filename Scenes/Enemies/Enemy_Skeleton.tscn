@@ -1,0 +1,142 @@
+[gd_scene load_steps=20 format=3 uid="uid://c67jhj0kaig6b"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_sm1oc"]
+[ext_resource type="Texture2D" uid="uid://bbtv53opgbcnk" path="res://Textures/Skeleton/Dead.png" id="2_nfa5r"]
+[ext_resource type="Texture2D" uid="uid://ck4hhr5uwiycv" path="res://Textures/Skeleton/Idle.png" id="3_eqd0b"]
+[ext_resource type="Texture2D" uid="uid://bjf5osnmq5grj" path="res://Textures/Skeleton/Hurt.png" id="3_iuok0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ghog4"]
+atlas = ExtResource("2_nfa5r")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oovpl"]
+atlas = ExtResource("2_nfa5r")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gh8r0"]
+atlas = ExtResource("2_nfa5r")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btlnc"]
+atlas = ExtResource("3_iuok0")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohffs"]
+atlas = ExtResource("3_iuok0")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mpgor"]
+atlas = ExtResource("3_iuok0")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xn0fo"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5ayq"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouyad"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_por18"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_miuyg"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7v8d"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw6c8"]
+atlas = ExtResource("3_eqd0b")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_66c60"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ghog4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oovpl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gh8r0")
+}],
+"loop": false,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btlnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohffs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mpgor")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xn0fo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m5ayq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ouyad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_por18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_miuyg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7v8d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw6c8")
+}],
+"loop": true,
+"name": &"idle2",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_slj47"]
+radius = 13.0
+height = 48.0
+
+[node name="Enemy_Skeleton" type="RigidBody2D"]
+collision_layer = 2
+collision_mask = 0
+mass = 2.0
+gravity_scale = 0.0
+script = ExtResource("1_sm1oc")
+health = 2
+dam = 15.0
+points = 150
+speed = 70.0
+
+[node name="visuals" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_66c60")
+animation = &"hurt"
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(6, 22)
+shape = SubResource("CapsuleShape2D_slj47")
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
+[connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
