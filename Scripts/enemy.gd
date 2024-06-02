@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 @onready var visuals = $visuals
-
+@onready var player = get_tree().get_first_node_in_group("player")
 
 signal killed(points)
 
@@ -13,7 +13,7 @@ var got_hit = false
 @export var spawn_time = 10;
 
 @export var speed := 100.0
-var player: CharacterBody2D
+#var player: CharacterBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visuals.animation = "idle2"
@@ -44,9 +44,9 @@ func take_damage(amount: int)-> void:
 		
 		
 
-
-func _on_hitbox_area_entered(area):
-	pass # Replace with function body.
+#
+#func _on_hitbox_area_entered(area):
+	#pass # Replace with function body.
 
 
 func _on_visuals_animation_finished():

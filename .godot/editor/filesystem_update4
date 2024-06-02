@@ -7,5 +7,4 @@ res://Scenes/Enemies/Enemy_Skeleton.tscn
 res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
 res://Scenes/Enemies/Enemy_Orc_Warrior.tscn
 res://Scenes/EnemySpawner.tscn
-res://Scripts/world.gd
 res://Scripts/enemy.gd

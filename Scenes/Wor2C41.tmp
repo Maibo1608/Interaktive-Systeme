@@ -3000,7 +3000,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.145055, 0.845544, 0.900878, 1)
 
-[node name="Player" parent="." groups=["player"] instance=ExtResource("2_ejwty")]
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("2_ejwty")]
 
 [node name="EnemyTimer" type="Timer" parent="."]
 wait_time = 2.0
