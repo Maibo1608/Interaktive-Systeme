@@ -4,6 +4,7 @@ extends Node2D
 
 @onready var player = get_tree().get_first_node_in_group("player")
 
+signal killed()
 var time = 0
 
 func _on_timer_timeout():
@@ -20,6 +21,7 @@ func _on_timer_timeout():
 				while counter < i.enemy_num:
 					var enemy_spawn = new_enemy.instantiate()
 					enemy_spawn.global_position = get_random_position()
+					enemy_spawn.killed.connect(_on_enemy_killed)
 					add_child(enemy_spawn)
 					counter += 1
 	
@@ -52,4 +54,8 @@ func get_random_position():
 	var y_spawn = randf_range(spawn_pos1.y, spawn_pos2.y)
 	return Vector2(x_spawn,y_spawn)
 	
+	
+
+func _on_enemy_killed(points):
+	killed.emit(points)
 	
