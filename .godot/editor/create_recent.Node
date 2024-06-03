@@ -1,12 +1,12 @@
+Sprite2D
+AnimatedSprite2D
 Timer
 Node
 Node2D
-AnimatedSprite2D
 AnimationPlayer
 TileMap
 Panel
 Label
-Sprite2D
 ParallaxLayer
 ParallaxBackground
 VBoxContainer

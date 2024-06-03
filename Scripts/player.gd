@@ -5,6 +5,7 @@ signal dying
 @onready var visuals = $visuals
 @onready var healthbar = $Healthbar
 @onready var animation_player = $AnimationPlayer
+@onready var silhouette = $silhouette
 
  
 
@@ -44,8 +45,11 @@ func _physics_process(delta):
 		visuals.flip_v = false
 	# See the note below about boolean assignment.
 		visuals.flip_h = velocity.x < 0
-
-		
+	
+	silhouette.animation = visuals.animation
+	silhouette.frame = visuals.frame
+	silhouette.flip_v = visuals.flip_v
+	silhouette.flip_h = visuals.flip_h
 
 
 func damage(value) -> void:

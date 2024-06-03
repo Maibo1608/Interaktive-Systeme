@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://dpjp6bludgedi"]
 
-[ext_resource type="Script" path="res://Scenes/EnemySpawner.gd" id="1_7ffv6"]
+[ext_resource type="Script" path="res://Scripts/EnemySpawner.gd" id="1_fyqoj"]
 [ext_resource type="PackedScene" uid="uid://b8uuruy3hcybn" path="res://Scenes/Enemies/Enemy_Flame.tscn" id="2_0jybx"]
 [ext_resource type="Script" path="res://Scripts/spawn_info.gd" id="2_1tctn"]
 [ext_resource type="PackedScene" uid="uid://c67jhj0kaig6b" path="res://Scenes/Enemies/Enemy_Skeleton.tscn" id="4_c1ny0"]
@@ -40,7 +40,7 @@ enemy_num = 1
 enemy_spawn_delay = 4
 
 [node name="EnemySpawner" type="Node2D"]
-script = ExtResource("1_7ffv6")
+script = ExtResource("1_fyqoj")
 spawns = Array[ExtResource("2_1tctn")]([SubResource("Resource_7c08e"), SubResource("Resource_hvmy8"), SubResource("Resource_jo0hy"), SubResource("Resource_iho24")])
 
 [node name="Timer" type="Timer" parent="."]

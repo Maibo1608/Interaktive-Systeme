@@ -1,9 +1,10 @@
-[gd_scene load_steps=40 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=42 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://ckwy25wh4j5u2" path="res://Textures/Samurai/Idle.png" id="2_64nu8"]
 [ext_resource type="Texture2D" uid="uid://d3402dpcwovbs" path="res://Textures/Samurai/Attack_1.png" id="2_p84xu"]
 [ext_resource type="Texture2D" uid="uid://cmakelkbqfjmn" path="res://Textures/Samurai/Run.png" id="3_audvp"]
+[ext_resource type="Shader" path="res://shaders/silhouette.gdshader" id="5_6cc7a"]
 [ext_resource type="Texture2D" uid="uid://nkqkgk3qubn7" path="res://Textures/attacks/SP301_nyknck/SP301_01.png" id="6_bko6b"]
 [ext_resource type="Texture2D" uid="uid://bvuwbrbvj0o72" path="res://Textures/attacks/SP301_nyknck/SP301_02.png" id="7_v44rb"]
 [ext_resource type="Texture2D" uid="uid://cqipsivrlmwe0" path="res://Textures/attacks/SP301_nyknck/SP301_03.png" id="8_a3jvg"]
@@ -167,6 +168,10 @@ animations = [{
 "name": &"melee_attack1",
 "speed": 25.0
 }]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iykvx"]
+shader = ExtResource("5_6cc7a")
+shader_parameter/silhouette_color = Color(0, 0, 0, 0.5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tg74n"]
 radius = 16.0
@@ -352,6 +357,12 @@ script = ExtResource("1_jfwkt")
 sprite_frames = SubResource("SpriteFrames_ier7n")
 animation = &"Idle"
 
+[node name="silhouette" type="AnimatedSprite2D" parent="."]
+z_index = 100
+material = SubResource("ShaderMaterial_iykvx")
+sprite_frames = SubResource("SpriteFrames_ier7n")
+animation = &"Idle"
+
 [node name="collider" type="CollisionShape2D" parent="."]
 position = Vector2(1, 56)
 shape = SubResource("CapsuleShape2D_tg74n")
@@ -408,6 +419,7 @@ position = Vector2(75.5, 7.5)
 shape = SubResource("RectangleShape2D_lduj2")
 
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
+[connection signal="animation_finished" from="silhouette" to="." method="_on_visuals_animation_finished"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
 [connection signal="timeout" from="attack1/reload" to="." method="attack1"]
 [connection signal="body_entered" from="attack1/melee_attack1" to="." method="_on_melee_attack_1_body_entered"]
