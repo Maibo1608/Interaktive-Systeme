@@ -76,3 +76,10 @@ func _on_melee_attack_1_body_entered(body):
 
 func attack1():
 	animation_player.play("attack1")
+
+
+func attack2():
+	var fireball = preload("res://Scenes/attacks/fireball.tscn").instantiate()
+	fireball.global_position = global_position
+	get_parent().add_child(fireball)
+	

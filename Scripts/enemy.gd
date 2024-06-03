@@ -22,7 +22,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
-	position = position + (global_position.direction_to(player.global_position) * speed * delta)
+	if not is_dying:
+		if (global_position.direction_to(player.global_position)).x < 0:
+			visuals.flip_h = true
+		else:
+			visuals.flip_h = false
+		position = position + (global_position.direction_to(player.global_position) * speed * delta)
 
 
 func take_damage(amount: int)-> void:

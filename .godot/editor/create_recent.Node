@@ -1,8 +1,10 @@
-Sprite2D
-AnimatedSprite2D
 Timer
-Node
 Node2D
+Area2D
+CollisionShape2D
+AnimatedSprite2D
+Sprite2D
+Node
 AnimationPlayer
 TileMap
 Panel
@@ -10,5 +12,3 @@ Label
 ParallaxLayer
 ParallaxBackground
 VBoxContainer
-HBoxContainer
-CanvasLayer

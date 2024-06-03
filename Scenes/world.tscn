@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
-[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/player.tscn" id="2_ejwty"]
+[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/Player.tscn" id="2_ejwty"]
 [ext_resource type="Texture2D" uid="uid://cvind2inxhpc4" path="res://Textures/background/tilemap1.png" id="2_q8akv"]
 [ext_resource type="PackedScene" uid="uid://bydfq20lrga8u" path="res://Scenes/hud.tscn" id="3_miq2v"]
 [ext_resource type="PackedScene" uid="uid://dpjp6bludgedi" path="res://Scenes/EnemySpawner.tscn" id="5_vg0il"]
