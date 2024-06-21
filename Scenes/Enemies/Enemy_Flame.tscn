@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://b8uuruy3hcybn"]
+[gd_scene load_steps=30 format=3 uid="uid://b8uuruy3hcybn"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_0vnk1"]
 [ext_resource type="Texture2D" uid="uid://esbyh0s85a3r" path="res://Textures/Fire_Spirit/Idle.png" id="2_nxpjp"]
 [ext_resource type="Texture2D" uid="uid://ck5submy20xl8" path="res://Textures/Fire_Spirit/Dead.png" id="3_7ldrh"]
 [ext_resource type="Texture2D" uid="uid://barv8ftauu8ge" path="res://Textures/Fire_Spirit/Idle_2.png" id="3_183at"]
 [ext_resource type="Texture2D" uid="uid://c054g4ngupn0y" path="res://Textures/Fire_Spirit/Hurt.png" id="4_cl8he"]
+[ext_resource type="Shader" path="res://shaders/silhouette.gdshader" id="6_7spk4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3a25"]
 atlas = ExtResource("2_nxpjp")
@@ -169,6 +170,10 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w7pr7"]
+shader = ExtResource("6_7spk4")
+shader_parameter/silhouette_color = Color(0, 0, 0, 0.5)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_slj47"]
 radius = 10.22
 height = 32.0
@@ -184,9 +189,17 @@ scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_66c60")
 animation = &"hurt"
 
+[node name="silhouette" type="AnimatedSprite2D" parent="."]
+z_index = 100
+material = SubResource("ShaderMaterial_w7pr7")
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_66c60")
+animation = &"hurt"
+
 [node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_slj47")
 
 [connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
+[connection signal="animation_finished" from="silhouette" to="." method="_on_visuals_animation_finished"]
