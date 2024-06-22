@@ -1,10 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://cyymwji00epmb"]
+[gd_scene load_steps=17 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
 [ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/Player.tscn" id="2_ejwty"]
 [ext_resource type="Texture2D" uid="uid://cvind2inxhpc4" path="res://Textures/background/tilemap1.png" id="2_q8akv"]
 [ext_resource type="PackedScene" uid="uid://bydfq20lrga8u" path="res://Scenes/hud.tscn" id="3_miq2v"]
 [ext_resource type="PackedScene" uid="uid://dpjp6bludgedi" path="res://Scenes/EnemySpawner.tscn" id="5_vg0il"]
+[ext_resource type="PackedScene" uid="uid://b8uuruy3hcybn" path="res://Scenes/Enemies/Enemy_Soldier.tscn" id="6_uaer8"]
+[ext_resource type="Script" path="res://Scripts/spawn_info.gd" id="7_sia5l"]
+[ext_resource type="PackedScene" uid="uid://c5efevnqyknha" path="res://Scenes/Enemies/Enemy_Orc_16Bit.tscn" id="8_h27av"]
+[ext_resource type="PackedScene" uid="uid://hdhm5078a5wg" path="res://Scenes/Enemies/Enemy_Orc_Warrior.tscn" id="9_ifouk"]
+[ext_resource type="PackedScene" uid="uid://c3j35fb4cenv8" path="res://Scenes/Enemies/Enemy_Orc_Shaman.tscn" id="10_cgm1m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h3rxj"]
 texture = ExtResource("2_q8akv")
@@ -2969,6 +2974,38 @@ terrain_set_0/terrain_3/name = "cliffs"
 terrain_set_0/terrain_3/color = Color(0.743879, 0, 0.106629, 1)
 sources/0 = SubResource("TileSetAtlasSource_h3rxj")
 
+[sub_resource type="Resource" id="Resource_7c08e"]
+script = ExtResource("7_sia5l")
+time_start = 1
+time_end = 60
+enemy = ExtResource("6_uaer8")
+enemy_num = 1
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_hnw87"]
+script = ExtResource("7_sia5l")
+time_start = 21
+time_end = 61
+enemy = ExtResource("8_h27av")
+enemy_num = 1
+enemy_spawn_delay = 1
+
+[sub_resource type="Resource" id="Resource_jo0hy"]
+script = ExtResource("7_sia5l")
+time_start = 61
+time_end = 120
+enemy = ExtResource("9_ifouk")
+enemy_num = 1
+enemy_spawn_delay = 5
+
+[sub_resource type="Resource" id="Resource_iho24"]
+script = ExtResource("7_sia5l")
+time_start = 121
+time_end = 180
+enemy = ExtResource("10_cgm1m")
+enemy_num = 1
+enemy_spawn_delay = 4
+
 [node name="World" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_8pu83")
@@ -3007,5 +3044,6 @@ wait_time = 2.0
 autostart = true
 
 [node name="EnemySpawner" parent="." instance=ExtResource("5_vg0il")]
+spawns = Array[ExtResource("7_sia5l")]([SubResource("Resource_7c08e"), SubResource("Resource_hnw87"), SubResource("Resource_jo0hy"), SubResource("Resource_iho24")])
 
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]

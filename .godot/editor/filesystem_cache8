@@ -1,21 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719063549
+::res://::1719065190
 export_presets.cfg::TextFile::-1::1717527016::0::1::::<><>::
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
-::res://Scenes/::1719063754
-EnemySpawner.tscn::PackedScene::8231640290368032414::1719063842::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Flame.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
-hud.tscn::PackedScene::4077479679207676886::1719063754::0::1::::<><>::res://Scripts/hud.gd
-main_menu.tscn::PackedScene::3059373882847460023::1719063753::0::1::::<><>::res://Scripts/main_menu.gd
+::res://Scenes/::1719065522
+EnemySpawner.tscn::PackedScene::8231640290368032414::1719065097::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
+hud.tscn::PackedScene::4077479679207676886::1719065522::0::1::::<><>::res://Scripts/hud.gd
+main_menu.tscn::PackedScene::3059373882847460023::1719065522::0::1::::<><>::res://Scripts/main_menu.gd
 menu_und_co.tscn::PackedScene::8795087400375655862::1715023607::0::1::::<><>::res://Scripts/menu_und_co.gd
-Player.tscn::PackedScene::5321099350856209789::1719063753::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
-World.tscn::PackedScene::6507687058413574821::1719063753::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn
-::res://Scenes/attacks/::1719063754
-fireball.tscn::PackedScene::156713524941627256::1719063754::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
-::res://Scenes/Enemies/::1719063754
-Enemy_Flame.tscn::PackedScene::4745185866005039247::1719063815::0::1::::<><>::res://Scripts/enemy.gd<>uid://cbtebjoo084px::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png<>uid://bwlwmlpof02uc::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png<>uid://bnbtpfg2gfy1k::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://b7lyg01mir4da::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png<>res://shaders/silhouette.gdshader
-Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1719063754::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
-Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1719063754::0::1::::<><>::res://Scripts/enemy.gd<>uid://bwvsufpge2p0j::::res://Textures/Orc_Warrior/Dead.png<>uid://dmhr5euadpntl::::res://Textures/Orc_Warrior/Hurt.png<>uid://bwy1hqmoon21j::::res://Textures/Orc_Warrior/Walk.png
-Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1719063754::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
+Player.tscn::PackedScene::5321099350856209789::1719065522::0::1::::<><>::res://Scripts/player.gd<>uid://lbh2tih22xln::::res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
+World.tscn::PackedScene::6507687058413574821::1719065563::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier.tscn<>res://Scripts/spawn_info.gd<>uid://c5efevnqyknha::::res://Scenes/Enemies/Enemy_Orc_16Bit.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
+::res://Scenes/attacks/::1719065523
+fireball.tscn::PackedScene::156713524941627256::1719065523::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
+::res://Scenes/Enemies/::1719065523
+Enemy_Orc_16Bit.tscn::PackedScene::6887076039515122226::1719065523::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
+Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
+Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://bwvsufpge2p0j::::res://Textures/Orc_Warrior/Dead.png<>uid://dmhr5euadpntl::::res://Textures/Orc_Warrior/Hurt.png<>uid://bwy1hqmoon21j::::res://Textures/Orc_Warrior/Walk.png
+Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
+Enemy_Soldier.tscn::PackedScene::4745185866005039247::1719065522::0::1::::<><>::res://Scripts/enemy.gd<>uid://cbtebjoo084px::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png<>uid://bwlwmlpof02uc::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png<>uid://bnbtpfg2gfy1k::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://b7lyg01mir4da::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png<>res://shaders/silhouette.gdshader
+Enemy_Skeleton_16Bit.tscn::PackedScene::7827918048300881554::1719065590::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
 ::res://Scripts/::1719063752
 enemy.gd::GDScript::-1::1719063752::0::1::::<>RigidBody2D<>::
 EnemySpawner.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
@@ -29,8 +31,8 @@ spawn_info.gd::GDScript::-1::1717261597::0::1::::Spawn_info<>Resource<>::
 world.gd::GDScript::-1::1717439012::0::1::::<>Node<>::
 ::res://Scripts/attacks/::1717439565
 fireball.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
-::res://shaders/::1719063754
-silhouette.gdshader::Shader::-1::1719063842::0::1::::<><>::
+::res://shaders/::1719065523
+silhouette.gdshader::Shader::-1::1719065563::0::1::::<><>::
 ::res://Textures/::1719062402
 ::res://Textures/16 Bit/::1719062316
 ::res://Textures/16 Bit/generic_char_v0.2/::1719062315
