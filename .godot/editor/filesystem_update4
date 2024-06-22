@@ -1,4 +1,4 @@
-res://Scenes/Enemies/Enemy_Orc_16Bit.tscn
+res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn
 res://shaders/silhouette.gdshader
 res://Scenes/World.tscn
 res://Scenes/Player.tscn
@@ -6,4 +6,8 @@ res://Scenes/main_menu.tscn
 res://Scenes/hud.tscn
 res://Scenes/Enemies/Enemy_Soldier.tscn
 res://Scenes/attacks/fireball.tscn
-res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn
+res://Scenes/Enemies/Enemy_Orc_16Bit.tscn
+res://Scenes/Enemies/Enemy_Slime.tscn
+res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn
+res://Scenes/Enemies/Enemy_Slime_16Bit.tscn
+res://Scenes/Enemies/Enemy_Orc_Shaman_16Bit.tscn

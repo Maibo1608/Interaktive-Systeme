@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dpjp6bludgedi"]
 
 [ext_resource type="Script" path="res://Scripts/EnemySpawner.gd" id="1_fyqoj"]
-[ext_resource type="PackedScene" uid="uid://b8uuruy3hcybn" path="res://Scenes/Enemies/Enemy_Soldier.tscn" id="2_0mfr7"]
+[ext_resource type="PackedScene" uid="uid://b8uuruy3hcybn" path="res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn" id="2_0mfr7"]
 [ext_resource type="Script" path="res://Scripts/spawn_info.gd" id="2_1tctn"]
 [ext_resource type="PackedScene" uid="uid://c67jhj0kaig6b" path="res://Scenes/Enemies/Enemy_Skeleton.tscn" id="4_c1ny0"]
 [ext_resource type="PackedScene" uid="uid://hdhm5078a5wg" path="res://Scenes/Enemies/Enemy_Orc_Warrior.tscn" id="5_eme3r"]

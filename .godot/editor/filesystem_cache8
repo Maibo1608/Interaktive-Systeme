@@ -1,23 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719065190
+::res://::1719070784
 export_presets.cfg::TextFile::-1::1717527016::0::1::::<><>::
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
-::res://Scenes/::1719065522
-EnemySpawner.tscn::PackedScene::8231640290368032414::1719065097::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
-hud.tscn::PackedScene::4077479679207676886::1719065522::0::1::::<><>::res://Scripts/hud.gd
-main_menu.tscn::PackedScene::3059373882847460023::1719065522::0::1::::<><>::res://Scripts/main_menu.gd
+::res://Scenes/::1719070784
+EnemySpawner.tscn::PackedScene::8231640290368032414::1719070130::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
+hud.tscn::PackedScene::4077479679207676886::1719070613::0::1::::<><>::res://Scripts/hud.gd
+main_menu.tscn::PackedScene::3059373882847460023::1719070613::0::1::::<><>::res://Scripts/main_menu.gd
 menu_und_co.tscn::PackedScene::8795087400375655862::1715023607::0::1::::<><>::res://Scripts/menu_und_co.gd
-Player.tscn::PackedScene::5321099350856209789::1719065522::0::1::::<><>::res://Scripts/player.gd<>uid://lbh2tih22xln::::res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
-World.tscn::PackedScene::6507687058413574821::1719065563::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier.tscn<>res://Scripts/spawn_info.gd<>uid://c5efevnqyknha::::res://Scenes/Enemies/Enemy_Orc_16Bit.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
-::res://Scenes/attacks/::1719065523
-fireball.tscn::PackedScene::156713524941627256::1719065523::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
-::res://Scenes/Enemies/::1719065523
-Enemy_Orc_16Bit.tscn::PackedScene::6887076039515122226::1719065523::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
+Player.tscn::PackedScene::5321099350856209789::1719070613::0::1::::<><>::res://Scripts/player.gd<>uid://lbh2tih22xln::::res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
+World.tscn::PackedScene::6507687058413574821::1719070789::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn<>res://Scripts/spawn_info.gd<>uid://c5efevnqyknha::::res://Scenes/Enemies/Enemy_Orc_16Bit.tscn<>uid://djr5wwtma4o23::::res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn<>uid://ctdkkrxhmw0mh::::res://Scenes/Enemies/Enemy_Orc_Slimey_16Bit.tscn<>uid://dyqbfiqm0aco6::::res://Scenes/Enemies/Enemy_Orc_Shaman_16Bit.tscn
+::res://Scenes/attacks/::1719070614
+fireball.tscn::PackedScene::156713524941627256::1719070614::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
+::res://Scenes/Enemies/::1719070784
+Enemy_Orc_16Bit.tscn::PackedScene::6887076039515122226::1719070614::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
 Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
+Enemy_Orc_Shaman_16Bit.tscn::PackedScene::8876894433901635859::1719070614::0::1::::<><>::res://Scripts/enemy.gd<>uid://os7a6fbal0m5::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/Idle-Sheet.png<>uid://cbcvk8pj82t1s::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/Death-Sheet.png<>uid://yvna8raw66jy::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/Run-Sheet.png<>res://shaders/silhouette.gdshader
+Enemy_Orc_Slimey_16Bit.tscn::PackedScene::6113248486400142355::1719070213::0::1::::<><>::res://Scripts/enemy.gd<>uid://u3lgp8321g8f::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_idle.png<>uid://gjotkhp7xx1j::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_death.png<>uid://bk8krxc82s3eg::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_hurt.png<>uid://bp05leyunlbjk::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_walk.png<>res://shaders/silhouette.gdshader
 Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://bwvsufpge2p0j::::res://Textures/Orc_Warrior/Dead.png<>uid://dmhr5euadpntl::::res://Textures/Orc_Warrior/Hurt.png<>uid://bwy1hqmoon21j::::res://Textures/Orc_Warrior/Walk.png
 Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
-Enemy_Soldier.tscn::PackedScene::4745185866005039247::1719065522::0::1::::<><>::res://Scripts/enemy.gd<>uid://cbtebjoo084px::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png<>uid://bwlwmlpof02uc::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png<>uid://bnbtpfg2gfy1k::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://b7lyg01mir4da::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png<>res://shaders/silhouette.gdshader
-Enemy_Skeleton_16Bit.tscn::PackedScene::7827918048300881554::1719065590::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
+Enemy_Skeleton_16Bit.tscn::PackedScene::7827918048300881554::1719070614::0::1::::<><>::res://Scripts/enemy.gd<>uid://bupkn0mcgx4as::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/Idle-Sheet.png<>uid://cnj3ovx0mxypt::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/Death-Sheet.png<>uid://cnegmbjddyphm::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/Run-Sheet.png<>res://shaders/silhouette.gdshader
+Enemy_Soldier_16Bit.tscn::PackedScene::4745185866005039247::1719070613::0::1::::<><>::res://Scripts/enemy.gd<>uid://cbtebjoo084px::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png<>uid://bwlwmlpof02uc::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png<>uid://bnbtpfg2gfy1k::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://b7lyg01mir4da::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png<>res://shaders/silhouette.gdshader
 ::res://Scripts/::1719063752
 enemy.gd::GDScript::-1::1719063752::0::1::::<>RigidBody2D<>::
 EnemySpawner.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
@@ -31,10 +33,33 @@ spawn_info.gd::GDScript::-1::1717261597::0::1::::Spawn_info<>Resource<>::
 world.gd::GDScript::-1::1717439012::0::1::::<>Node<>::
 ::res://Scripts/attacks/::1717439565
 fireball.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
-::res://shaders/::1719065523
-silhouette.gdshader::Shader::-1::1719065563::0::1::::<><>::
+::res://shaders/::1719070784
+silhouette.gdshader::Shader::-1::1719070789::0::1::::<><>::
 ::res://Textures/::1719062402
-::res://Textures/16 Bit/::1719062316
+::res://Textures/16 Bit/::1719068671
+::res://Textures/16 Bit/Crab Enemy Camacebra Games/::1591117480
+Read me before use.txt::TextFile::-1::1591117846::0::1::::<><>::
+::res://Textures/16 Bit/Crab Enemy Camacebra Games/Attack/::1719068261
+Crab_Attack1.png::CompressedTexture2D::2799526484661271326::1581657096::1719068261::1::::<><>::
+Crab_Attack2.png::CompressedTexture2D::1675581583918986333::1581657096::1719068261::1::::<><>::
+Crab_Attack3.png::CompressedTexture2D::2144095226144877652::1581657096::1719068261::1::::<><>::
+Crab_Attack4.png::CompressedTexture2D::8249180681357311428::1581657096::1719068261::1::::<><>::
+::res://Textures/16 Bit/Crab Enemy Camacebra Games/Attack/AttackDown/::1719068261
+Crab_AttackDown1.png::CompressedTexture2D::8319481882935397716::1581837332::1719068261::1::::<><>::
+Crab_AttackDown2.png::CompressedTexture2D::256411950804167435::1581837333::1719068261::1::::<><>::
+Crab_AttackDown3.png::CompressedTexture2D::3862097758688487799::1581837333::1719068261::1::::<><>::
+Crab_AttackDown4.png::CompressedTexture2D::5495505488610470768::1581837333::1719068261::1::::<><>::
+::res://Textures/16 Bit/Crab Enemy Camacebra Games/Idle/::1719068261
+Crab1.png::CompressedTexture2D::6537603750569655809::1591116310::1719068261::1::::<><>::
+Crab2.png::CompressedTexture2D::3329704509125250481::1591116310::1719068261::1::::<><>::
+Crab3.png::CompressedTexture2D::826545550045014130::1591116311::1719068261::1::::<><>::
+Crab4.png::CompressedTexture2D::61286534590006609::1591116311::1719068261::1::::<><>::
+Crab5.png::CompressedTexture2D::1904436784365413233::1591116311::1719068261::1::::<><>::
+::res://Textures/16 Bit/Crab Enemy Camacebra Games/Moving/::1719068261
+CrabMoving1.png::CompressedTexture2D::2838699771422054825::1581479670::1719068261::1::::<><>::
+CrabMoving2.png::CompressedTexture2D::5482486847751020500::1581479670::1719068261::1::::<><>::
+CrabMoving3.png::CompressedTexture2D::827709456117394264::1581479670::1719068261::1::::<><>::
+CrabMoving4.png::CompressedTexture2D::7134969385216516193::1581479670::1719068261::1::::<><>::
 ::res://Textures/16 Bit/generic_char_v0.2/::1719062315
 guide.png::CompressedTexture2D::1330603613096540324::1719060168::1719060173::1::::<><>::
 guide_2.png::CompressedTexture2D::8607590436804215357::1719060168::1719060173::1::::<><>::
@@ -72,6 +97,160 @@ Orc-Hurt.png::CompressedTexture2D::3628776400657206384::1719060168::1719060173::
 Orc-Idle.png::CompressedTexture2D::5316205648027984415::1719060168::1719060173::1::::<><>::
 Orc-Walk.png::CompressedTexture2D::4937745942916870335::1719060168::1719060173::1::::<><>::
 Orc.png::CompressedTexture2D::2101253898930102974::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/::1719067037
+Terms.txt::TextFile::-1::1663879722::0::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/::1666941768
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/::1666979256
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/::1666952130
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::4854272553666279393::1666979868::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::1188995510292433210::1666979888::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::1280411330264044216::1666979904::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/::1666971656
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::3447648209979339657::1666979854::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::3956038422445168439::1666979836::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Rogue/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::5211062205229165776::1666979822::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/::1666979712
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::4848453638216221722::1666979736::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::1021747190267829842::1666979752::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::1728675260616880350::1666979768::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/::1666978376
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::8601691009995546619::1666979808::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::2296906375723604487::1666979796::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Warrior/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::7284627389821202295::1666979784::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/::1666941762
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/::1666708490
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::5705601951052999113::1666765350::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::3821794939734306654::1666765370::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/::1719068262
+Run-Sheet.png::CompressedTexture2D::5693939643748185798::1666765386::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/::1666716650
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Death/::1719068262
+Death-Sheet.png::CompressedTexture2D::3501699975703571529::1666765406::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Idle/::1719068262
+Idle-Sheet.png::CompressedTexture2D::4034409487332644813::1666765416::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Mage/Run/::1719068262
+Run-Sheet.png::CompressedTexture2D::3441502041658798299::1666765430::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/::1666713372
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Death/::1719068262
+Death-Sheet.png::CompressedTexture2D::7528377259217924695::1666765442::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Idle/::1719068262
+Idle-Sheet.png::CompressedTexture2D::3172834049175523921::1666765454::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Rogue/Run/::1719068262
+Run-Sheet.png::CompressedTexture2D::7220597058098729896::1666765464::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/::1666714986
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Death/::1719068262
+Death-Sheet.png::CompressedTexture2D::2471454080568667965::1666765476::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Idle/::1719068262
+Idle-Sheet.png::CompressedTexture2D::727277303321327960::1666765488::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Warrior/Run/::1719068262
+Run-Sheet.png::CompressedTexture2D::1279756341379811071::1666765506::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Environment/::1667427200
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/::1666428510
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Environment/Dungeon Prison/Assets/::1719068262
+Props.png::CompressedTexture2D::7289018848924766931::1666688480::1719068262::1::::<><>::
+Tiles.png::CompressedTexture2D::2717315707852185847::1666688464::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Environment/Green Woods/::1666443176
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Environment/Green Woods/Assets/::1719068262
+Props.png::CompressedTexture2D::5949331087147119372::1666520940::1719068262::1::::<><>::
+Tiles.png::CompressedTexture2D::8260832193828513406::1666520934::1719068262::1::::<><>::
+Trees.png::CompressedTexture2D::7263114461752845412::1666520926::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/::1666624968
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Knight/::1666350914
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Knight/Death/::1719068262
+Death-Sheet.png::CompressedTexture2D::6531536526968257747::1666532964::1719068262::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Knight/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::4583843078878789963::1666359374::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Knight/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::1440862520403533736::1666359456::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Rogue/::1666533680
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::7002726574714789099::1666599428::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::584483315520128768::1666599440::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Rogue/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::6976919275976458570::1666599458::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/::1666626126
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Death/::1719068261
+Death-Sheet.png::CompressedTexture2D::4827003136392860456::1666688694::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Idle/::1719068261
+Idle-Sheet.png::CompressedTexture2D::4827597241916272400::1666688710::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Heroes/Wizzard/Run/::1719068261
+Run-Sheet.png::CompressedTexture2D::712760371788447403::1666688726::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Weapons/::1666879956
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Weapons/Bone/::1719068261
+Bone.png::CompressedTexture2D::6842258860848850262::1666888648::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Weapons/Hands/::1719068261
+Hands.png::CompressedTexture2D::6837782339617655689::1666796850::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Weapons/Wood/::1719068261
+Wood.png::CompressedTexture2D::3680995934133266620::1666688932::1719068261::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/::1719068572
+read_me.txt::TextFile::-1::1694153060::0::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Golbin/::1719068688
+spr_goblin_attack.png::CompressedTexture2D::560595872650669023::1694317715::1719068688::1::::<><>::
+spr_goblin_death.png::CompressedTexture2D::558679902423795845::1694152948::1719068688::1::::<><>::
+spr_goblin_hurt.png::CompressedTexture2D::3414812962597238076::1693953435::1719068688::1::::<><>::
+spr_goblin_hurt_withoutfilter.png::CompressedTexture2D::7170254328632443555::1693953626::1719068688::1::::<><>::
+spr_goblin_idle.png::CompressedTexture2D::9003833443497062051::1693953420::1719068688::1::::<><>::
+spr_goblin_walk.png::CompressedTexture2D::9011128407786206095::1693953427::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Golbin/Shadowless/::1719068688
+spr_goblin_attack_shadowless.png::CompressedTexture2D::1711630172092198803::1693953542::1719068688::1::::<><>::
+spr_goblin_hurt_shadowless.png::CompressedTexture2D::246727725495521144::1693953532::1719068688::1::::<><>::
+spr_goblin_idle_shadowless.png::CompressedTexture2D::5671909665386659782::1693953581::1719068688::1::::<><>::
+spr_goblin_walk_shadowless.png::CompressedTexture2D::106424964593762552::1693953552::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/::1694323583
+read_me.txt::TextFile::-1::1694153060::0::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/Golbin/::1719068688
+spr_goblin_attack.png::CompressedTexture2D::6391176502272869860::1694317715::1719068688::1::::<><>::
+spr_goblin_death.png::CompressedTexture2D::4950341224025351895::1694152948::1719068688::1::::<><>::
+spr_goblin_hurt.png::CompressedTexture2D::4282296615582888752::1693953435::1719068688::1::::<><>::
+spr_goblin_hurt_withoutfilter.png::CompressedTexture2D::7800826908390857321::1693953626::1719068688::1::::<><>::
+spr_goblin_idle.png::CompressedTexture2D::8457941335990518924::1693953420::1719068688::1::::<><>::
+spr_goblin_walk.png::CompressedTexture2D::6244113690923609304::1693953427::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/Golbin/Shadowless/::1719068688
+spr_goblin_attack_shadowless.png::CompressedTexture2D::2393519373071694019::1693953542::1719068688::1::::<><>::
+spr_goblin_hurt_shadowless.png::CompressedTexture2D::2711255429558810438::1693953532::1719068688::1::::<><>::
+spr_goblin_idle_shadowless.png::CompressedTexture2D::1707427094039789807::1693953581::1719068688::1::::<><>::
+spr_goblin_walk_shadowless.png::CompressedTexture2D::6161011520819021308::1693953552::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/Slime/::1694323632
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/::1719068688
+spr_Blue_slime_attack.png::CompressedTexture2D::8265539999900113452::1693954434::1719068688::1::::<><>::
+spr_Blue_slime_death.png::CompressedTexture2D::3670951833729484196::1693954447::1719068688::1::::<><>::
+spr_Blue_slime_hurt.png::CompressedTexture2D::4742785952206236073::1693954299::1719068688::1::::<><>::
+spr_Blue_slime_hurt_without_filter.png::CompressedTexture2D::2091118793625597932::1693954484::1719068688::1::::<><>::
+spr_Blue_slime_idle.png::CompressedTexture2D::6729650885306742483::1693954276::1719068688::1::::<><>::
+spr_Blue_slime_walk.png::CompressedTexture2D::7537520731097270841::1693954287::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/shadowless/::1719068687
+spr_Blue_slime_attack_shadowless.png::CompressedTexture2D::862974253522204084::1693954570::1719068687::1::::<><>::
+spr_Blue_slime_hurt_shadowless.png::CompressedTexture2D::2124363709514457149::1693954557::1719068687::1::::<><>::
+spr_Blue_slime_idle_shadowless.png::CompressedTexture2D::3675410347983737050::1693954508::1719068687::1::::<><>::
+spr_Blue_slime_walk_shadowless.png::CompressedTexture2D::8048790582421470130::1693954517::1719068687::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/::1694323632
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/::1719068688
+spr_Blue_slime_attack.png::CompressedTexture2D::185536924054263385::1693954434::1719068688::1::::<><>::
+spr_Blue_slime_death.png::CompressedTexture2D::440596966370013745::1693954447::1719068688::1::::<><>::
+spr_Blue_slime_hurt.png::CompressedTexture2D::3157072327044297566::1693954299::1719068688::1::::<><>::
+spr_Blue_slime_hurt_without_filter.png::CompressedTexture2D::5200454734417876298::1693954484::1719068688::1::::<><>::
+spr_Blue_slime_idle.png::CompressedTexture2D::1462258891696282687::1693954276::1719068688::1::::<><>::
+spr_Blue_slime_walk.png::CompressedTexture2D::3492704183726250216::1693954287::1719068688::1::::<><>::
+::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/shadowless/::1719068688
+spr_Blue_slime_attack_shadowless.png::CompressedTexture2D::5939837096597004086::1693954570::1719068688::1::::<><>::
+spr_Blue_slime_hurt_shadowless.png::CompressedTexture2D::3768813295853146351::1693954557::1719068688::1::::<><>::
+spr_Blue_slime_idle_shadowless.png::CompressedTexture2D::7066886565508700247::1693954508::1719068688::1::::<><>::
+spr_Blue_slime_walk_shadowless.png::CompressedTexture2D::8911049249449110147::1693954517::1719068688::1::::<><>::
 ::res://Textures/16 Bit/Skull_CamacebraGames/::1719062316
 README.txt::TextFile::-1::1719060168::0::1::::<><>::
 Skull-Sheet.png::CompressedTexture2D::6647006030383922426::1719060168::1719060173::1::::<><>::
