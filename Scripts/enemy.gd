@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 @onready var visuals = $visuals
+@onready var silhouette = $silhouette
 @onready var player = get_tree().get_first_node_in_group("player")
 
 signal killed(points)
@@ -28,6 +29,10 @@ func _physics_process(delta):
 		else:
 			visuals.flip_h = false
 		position = position + (global_position.direction_to(player.global_position) * speed * delta)
+	silhouette.animation = visuals.animation
+	silhouette.frame = visuals.frame
+	silhouette.flip_v = visuals.flip_v
+	silhouette.flip_h = visuals.flip_h
 
 
 func take_damage(amount: int)-> void:

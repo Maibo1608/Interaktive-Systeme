@@ -1,5 +1,7 @@
 res://Scenes/Enemies/Enemy_Flame.tscn
 res://shaders/silhouette.gdshader
+res://Scripts/enemy.gd
+res://Scenes/World.tscn
 res://Scenes/Player.tscn
 res://Scenes/main_menu.tscn
 res://Scenes/hud.tscn
@@ -8,4 +10,4 @@ res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
 res://Scenes/Enemies/Enemy_Orc_Warrior.tscn
 res://Scenes/EnemySpawner.tscn
 res://Scenes/attacks/fireball.tscn
-res://Scenes/World.tscn
+res://Scenes/Enemies/Enemy_Soldier.tscn
