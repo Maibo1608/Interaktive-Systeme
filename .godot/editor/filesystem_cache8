@@ -1,23 +1,23 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719059623
+::res://::1719062414
 export_presets.cfg::TextFile::-1::1717527016::0::1::::<><>::
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
-::res://Scenes/::1719059571
-EnemySpawner.tscn::PackedScene::8231640290368032414::1719059571::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Flame.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
-hud.tscn::PackedScene::4077479679207676886::1717526582::0::1::::<><>::res://Scripts/hud.gd
-main_menu.tscn::PackedScene::3059373882847460023::1717526582::0::1::::<><>::res://Scripts/main_menu.gd
+::res://Scenes/::1719062363
+EnemySpawner.tscn::PackedScene::8231640290368032414::1719062363::0::1::::<><>::res://Scripts/EnemySpawner.gd<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Flame.tscn<>res://Scripts/spawn_info.gd<>uid://c67jhj0kaig6b::::res://Scenes/Enemies/Enemy_Skeleton.tscn<>uid://hdhm5078a5wg::::res://Scenes/Enemies/Enemy_Orc_Warrior.tscn<>uid://c3j35fb4cenv8::::res://Scenes/Enemies/Enemy_Orc_Shaman.tscn
+hud.tscn::PackedScene::4077479679207676886::1719060219::0::1::::<><>::res://Scripts/hud.gd
+main_menu.tscn::PackedScene::3059373882847460023::1719060219::0::1::::<><>::res://Scripts/main_menu.gd
 menu_und_co.tscn::PackedScene::8795087400375655862::1715023607::0::1::::<><>::res://Scripts/menu_und_co.gd
-Player.tscn::PackedScene::5321099350856209789::1717526582::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
-world.tscn::PackedScene::6507687058413574821::1719059571::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn
-::res://Scenes/attacks/::1717526583
-fireball.tscn::PackedScene::156713524941627256::1717526583::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
-::res://Scenes/Enemies/::1719059571
-Enemy_Flame.tscn::PackedScene::4745185866005039247::1719059571::0::1::::<><>::res://Scripts/enemy.gd<>uid://esbyh0s85a3r::::res://Textures/Fire_Spirit/Idle.png<>uid://ck5submy20xl8::::res://Textures/Fire_Spirit/Dead.png<>uid://barv8ftauu8ge::::res://Textures/Fire_Spirit/Idle_2.png<>uid://c054g4ngupn0y::::res://Textures/Fire_Spirit/Hurt.png
-Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1717526583::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
-Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1717526583::0::1::::<><>::res://Scripts/enemy.gd<>uid://bwvsufpge2p0j::::res://Textures/Orc_Warrior/Dead.png<>uid://dmhr5euadpntl::::res://Textures/Orc_Warrior/Hurt.png<>uid://bwy1hqmoon21j::::res://Textures/Orc_Warrior/Walk.png
-Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1717526583::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
-::res://Scripts/::1719059571
-enemy.gd::GDScript::-1::1719059571::0::1::::<>RigidBody2D<>::
+Player.tscn::PackedScene::5321099350856209789::1719060219::0::1::::<><>::res://Scripts/player.gd<>uid://ckwy25wh4j5u2::::res://Textures/Samurai/Idle.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
+world.tscn::PackedScene::6507687058413574821::1719062363::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/Player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn
+::res://Scenes/attacks/::1719060219
+fireball.tscn::PackedScene::156713524941627256::1719060219::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
+::res://Scenes/Enemies/::1719062369
+Enemy_Flame.tscn::PackedScene::4745185866005039247::1719062369::0::1::::<><>::res://Scripts/enemy.gd<>uid://esbyh0s85a3r::::res://Textures/Fire_Spirit/Idle.png<>uid://ck5submy20xl8::::res://Textures/Fire_Spirit/Dead.png<>uid://barv8ftauu8ge::::res://Textures/Fire_Spirit/Idle_2.png<>uid://c054g4ngupn0y::::res://Textures/Fire_Spirit/Hurt.png<>res://shaders/silhouette.gdshader<>uid://cmakelkbqfjmn::::res://Textures/Samurai/Run.png<>uid://d3402dpcwovbs::::res://Textures/Samurai/Attack_1.png
+Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1719060219::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
+Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1719060219::0::1::::<><>::res://Scripts/enemy.gd<>uid://bwvsufpge2p0j::::res://Textures/Orc_Warrior/Dead.png<>uid://dmhr5euadpntl::::res://Textures/Orc_Warrior/Hurt.png<>uid://bwy1hqmoon21j::::res://Textures/Orc_Warrior/Walk.png
+Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1719060219::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
+::res://Scripts/::1719062363
+enemy.gd::GDScript::-1::1719062363::0::1::::<>RigidBody2D<>::
 EnemySpawner.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
 hud.gd::GDScript::-1::1717343128::0::1::::<>CanvasLayer<>::
 main_menu.gd::GDScript::-1::1716972717::0::1::::<>Control<>::
@@ -29,9 +29,88 @@ spawn_info.gd::GDScript::-1::1717261597::0::1::::Spawn_info<>Resource<>::
 world.gd::GDScript::-1::1717439012::0::1::::<>Node<>::
 ::res://Scripts/attacks/::1717439565
 fireball.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
-::res://shaders/::1717527635
-silhouette.gdshader::Shader::-1::1717527635::0::1::::<><>::
-::res://Textures/::1719059571
+::res://shaders/::1719062322
+silhouette.gdshader::Shader::-1::1719062322::0::1::::<><>::
+::res://Textures/::1719062402
+::res://Textures/16 Bit/::1719062316
+::res://Textures/16 Bit/generic_char_v0.2/::1719062315
+guide.png::CompressedTexture2D::1330603613096540324::1719060168::1719060173::1::::<><>::
+guide_2.png::CompressedTexture2D::8607590436804215357::1719060168::1719060173::1::::<><>::
+readme.TXT::TextFile::-1::1719060168::0::1::::<><>::
+::res://Textures/16 Bit/generic_char_v0.2/png/::1719062315
+::res://Textures/16 Bit/generic_char_v0.2/png/blue/::1719062315
+char_blue_1.png::CompressedTexture2D::774615903814518727::1719060168::1719060173::1::::<><>::
+char_blue_2.png::CompressedTexture2D::7764016642940083599::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/generic_char_v0.2/png/green/::1719062315
+char_green_1.png::CompressedTexture2D::8109558924138658764::1719060168::1719060173::1::::<><>::
+char_green_2.png::CompressedTexture2D::7450579706760113764::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/generic_char_v0.2/png/purple/::1719062315
+char_purple_1.png::CompressedTexture2D::5820000031053131647::1719060168::1719060173::1::::<><>::
+char_purple_2.png::CompressedTexture2D::128681956338301320::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/generic_char_v0.2/png/red/::1719062315
+char_red_1.png::CompressedTexture2D::4684963678583312376::1719060168::1719060173::1::::<><>::
+char_red_2.png::CompressedTexture2D::8894681143432703815::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Orc/::1719062315
+::res://Textures/16 Bit/Orc/Orc/::1719062315
+Orc-Attack01.png::CompressedTexture2D::8350691416258332272::1719060168::1719060173::1::::<><>::
+Orc-Attack02.png::CompressedTexture2D::6575113662696253887::1719060168::1719060173::1::::<><>::
+Orc-Death.png::CompressedTexture2D::2876648246978951881::1719060168::1719060173::1::::<><>::
+Orc-Hurt.png::CompressedTexture2D::6699343923516030396::1719060168::1719060173::1::::<><>::
+Orc-Idle.png::CompressedTexture2D::1565854849471477235::1719060168::1719060173::1::::<><>::
+Orc-shadow.png::CompressedTexture2D::7041190688517971009::1719060168::1719060173::1::::<><>::
+Orc-shadow_attack02.png::CompressedTexture2D::8817889594956368787::1719060168::1719060173::1::::<><>::
+Orc-shadow_death.png::CompressedTexture2D::1972947590883943738::1719060168::1719060173::1::::<><>::
+Orc-Walk.png::CompressedTexture2D::3997548994227936923::1719060168::1719060173::1::::<><>::
+Orc.png::CompressedTexture2D::2962339839916482066::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Orc/Orc with shadows/::1719062316
+Orc-Attack01.png::CompressedTexture2D::5770993539984085147::1719060168::1719060173::1::::<><>::
+Orc-Attack02.png::CompressedTexture2D::4116753674137024062::1719060168::1719060173::1::::<><>::
+Orc-Death.png::CompressedTexture2D::4591041684244452192::1719060168::1719060173::1::::<><>::
+Orc-Hurt.png::CompressedTexture2D::3628776400657206384::1719060168::1719060173::1::::<><>::
+Orc-Idle.png::CompressedTexture2D::5316205648027984415::1719060168::1719060173::1::::<><>::
+Orc-Walk.png::CompressedTexture2D::4937745942916870335::1719060168::1719060173::1::::<><>::
+Orc.png::CompressedTexture2D::2101253898930102974::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Skull_CamacebraGames/::1719062316
+README.txt::TextFile::-1::1719060168::0::1::::<><>::
+Skull-Sheet.png::CompressedTexture2D::6647006030383922426::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Skull_CamacebraGames/Skull/::1719062316
+::res://Textures/16 Bit/Skull_CamacebraGames/Skull/Idle/::1719062316
+SkullIdle1.png::CompressedTexture2D::2803307005699977930::1719060168::1719060173::1::::<><>::
+SkullIdle2.png::CompressedTexture2D::4178896059569603245::1719060168::1719060173::1::::<><>::
+SkullIdle3.png::CompressedTexture2D::466741812239536215::1719060168::1719060173::1::::<><>::
+SkullIdle4.png::CompressedTexture2D::5981919838251959081::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Skull_CamacebraGames/Skull/Jump/::1719062316
+SkullJump1.png::CompressedTexture2D::8342290243130617162::1719060168::1719060173::1::::<><>::
+SkullJump2.png::CompressedTexture2D::1218944076189310767::1719060168::1719060173::1::::<><>::
+SkullJump3.png::CompressedTexture2D::5648049205246980098::1719060168::1719060173::1::::<><>::
+SkullJump4.png::CompressedTexture2D::7982988783436549229::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Skull_CamacebraGames/Skull/Walk/::1719062316
+SkullWalk1.png::CompressedTexture2D::2853521259800850467::1719060168::1719060173::1::::<><>::
+SkullWalk2.png::CompressedTexture2D::5614473352288725753::1719060168::1719060173::1::::<><>::
+SkullWalk3.png::CompressedTexture2D::5725567802966590033::1719060168::1719060173::1::::<><>::
+SkullWalk4.png::CompressedTexture2D::9179254085691874987::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Soldier/::1719062316
+::res://Textures/16 Bit/Soldier/Soldier/::1719062316
+Soldier-Attack01.png::CompressedTexture2D::5589956707139691302::1719060168::1719060173::1::::<><>::
+Soldier-Attack02.png::CompressedTexture2D::1082798395245184250::1719060168::1719060173::1::::<><>::
+Soldier-Attack03.png::CompressedTexture2D::7783219574630978494::1719060168::1719060173::1::::<><>::
+Soldier-Death.png::CompressedTexture2D::6535700043393962330::1719060168::1719060173::1::::<><>::
+Soldier-Hurt.png::CompressedTexture2D::9011282180490911343::1719060168::1719060173::1::::<><>::
+Soldier-Idle.png::CompressedTexture2D::752478275068731809::1719060168::1719060173::1::::<><>::
+Soldier-Shadow.png::CompressedTexture2D::8856384393475228313::1719060168::1719060173::1::::<><>::
+Soldier-Shadow_attack2.png::CompressedTexture2D::1950979826644487451::1719060168::1719060173::1::::<><>::
+Soldier-Shadow_death.png::CompressedTexture2D::4083668969925785595::1719060168::1719060173::1::::<><>::
+Soldier-Walk.png::CompressedTexture2D::5100458069641612493::1719060168::1719060173::1::::<><>::
+Soldier.png::CompressedTexture2D::7068891193381684869::1719060168::1719060173::1::::<><>::
+::res://Textures/16 Bit/Soldier/Soldier with shadows/::1719062316
+Soldier-Attack01.png::CompressedTexture2D::256279553280013591::1719060168::1719060173::1::::<><>::
+Soldier-Attack02.png::CompressedTexture2D::1739256668832884056::1719060168::1719060173::1::::<><>::
+Soldier-Attack03.png::CompressedTexture2D::3704245603858404243::1719060168::1719060173::1::::<><>::
+Soldier-Death.png::CompressedTexture2D::3954641203964901934::1719060168::1719060173::1::::<><>::
+Soldier-Hurt.png::CompressedTexture2D::3302120711633294918::1719060168::1719060173::1::::<><>::
+Soldier-Idle.png::CompressedTexture2D::4882498537124589537::1719060168::1719060173::1::::<><>::
+Soldier-Walk.png::CompressedTexture2D::4656641111799905378::1719060168::1719060173::1::::<><>::
+Soldier.png::CompressedTexture2D::3731293852263662580::1719060168::1719060173::1::::<><>::
 ::res://Textures/attacks/::1717439565
 ::res://Textures/attacks/FE1001/::1717245585
 FE1001_01.png::CompressedTexture2D::4578743833915695258::1717244213::1717245585::1::::<><>::
