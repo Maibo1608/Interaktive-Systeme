@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
-[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/Player.tscn" id="2_ejwty"]
+[ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/player.tscn" id="2_ejwty"]
 [ext_resource type="Texture2D" uid="uid://cvind2inxhpc4" path="res://Textures/background/tilemap1.png" id="2_q8akv"]
 [ext_resource type="PackedScene" uid="uid://bydfq20lrga8u" path="res://Scenes/hud.tscn" id="3_miq2v"]
 [ext_resource type="PackedScene" uid="uid://dpjp6bludgedi" path="res://Scenes/EnemySpawner.tscn" id="5_vg0il"]
@@ -3035,7 +3035,8 @@ layer_3/y_sort_enabled = true
 layer_3/z_index = 1
 layer_3/tile_data = PackedInt32Array(-196601, 589824, 0, -65526, 589824, 0, 327690, 589824, 0, 65552, 786432, 2, 131077, 786432, 2, -327660, 786432, 2, 131084, 983040, 2, 589840, 983040, 2, 458758, 983040, 6, -262133, 983040, 6, 327700, 983040, 6)
 
-[node name="HUD" parent="." instance=ExtResource("3_miq2v")]
+[node name="HUD" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_miq2v")]
+player = NodePath("../Player")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false

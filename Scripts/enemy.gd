@@ -4,7 +4,7 @@ extends RigidBody2D
 @onready var silhouette = $silhouette
 @onready var player = get_tree().get_first_node_in_group("player")
 
-signal killed(points)
+signal killed(points, xp)
 
 var is_dying = false
 var got_hit = false
@@ -12,6 +12,7 @@ var got_hit = false
 @export var dam: = 10.0
 @export var points = 100
 @export var spawn_time = 10;
+@export var xp = 10
 
 @export var speed := 100.0
 #var player: CharacterBody2D
@@ -45,7 +46,7 @@ func take_damage(amount: int)-> void:
 		print("dead body")
 		is_dying = true
 		visuals.play("die")
-		killed.emit(points)
+		killed.emit(points, xp)
 	if health > 0: 
 		print("got hit, current health: ", health)
 		got_hit = true

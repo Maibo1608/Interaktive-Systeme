@@ -14,7 +14,8 @@ var score = 0
 func _ready():
 	player.dying.connect(_on_player_dying)
 	enemy_spawner.killed.connect(_on_enemy_killed)
-	
+	player.lvlup.connect(_on_player_lvlup)
+	hud.player = player
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,14 +29,19 @@ func new_game():
 
 	
 
-func _on_enemy_killed(points):
+func _on_enemy_killed(points, xp):
 	score += points
 	hud.update_score(score)
+	hud.update_xpbar(xp)
+	player.current_xp += xp
 
 func _on_player_dying():
 	hud.death_screen.visible = true
 	get_tree().paused = true
 
-
+func _on_player_lvlup():
+	hud.lvlup()
+	get_tree().paused = true
+	
 
 

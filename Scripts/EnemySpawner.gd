@@ -56,6 +56,6 @@ func get_random_position():
 	
 	
 
-func _on_enemy_killed(points):
-	killed.emit(points)
+func _on_enemy_killed(points, xp):
+	killed.emit(points, xp)
 	

@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 signal dying
+signal lvlup
 
 @onready var visuals = $visuals
 @onready var healthbar = $Healthbar
@@ -8,21 +9,35 @@ signal dying
 @onready var silhouette = $silhouette
 
  
-
-const MAX_HEALTH = 100
-
+#Player Stats
+var max_health = 100
+var current_xp = 0
+var xp_threshold = 100
+var current_lvl = 1
 var health = 100
+var basespeed = 400
+var speed = basespeed
 
-@export var speed = 400
-
+#Ability Levels
+var attack1_lvl = 1
+var attack2_lvl = 1
+var heart_lvl = 0
+var boots_lvl = 0
 
 func _ready():
-	healthbar.max_value = MAX_HEALTH
+	healthbar.max_value = max_health
 	healthbar.value = health
 	
 func set_health_bar () -> void:
 	healthbar.value = health
-
+func change_stats():
+	healthbar.max_value = max_health + (heart_lvl * 20)
+	speed = basespeed + (boots_lvl * 20)
+func _process(delta):
+	if current_xp >= xp_threshold:
+		current_xp -= xp_threshold
+		current_lvl += 1
+		lvlup.emit()
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("left"):
@@ -62,8 +77,9 @@ func damage(value) -> void:
 	
 
 func _on_area_2d_body_entered(body):
-	damage(body.dam)
-	body.queue_free()
+	if body.is_dying == false:
+		damage(body.dam)
+		body.queue_free()
 
 
 
