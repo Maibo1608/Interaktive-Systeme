@@ -13,6 +13,7 @@ var got_hit = false
 @export var points = 100
 @export var spawn_time = 10;
 @export var xp = 10
+@export var showHealthbar = false;
 
 @export var speed := 100.0
 #var player: CharacterBody2D
@@ -20,6 +21,8 @@ var got_hit = false
 func _ready():
 	visuals.animation = "idle2"
 	visuals.play()
+	if (showHealthbar == true):
+		pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

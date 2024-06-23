@@ -1,10 +1,5 @@
-res://Scenes/main_menu.tscn
-res://Scenes/menu_und_co.tscn
-res://Scenes/player.tscn
 res://Scenes/Enemies/Enemy_Orc_16Bit.tscn
+res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
 res://Scenes/EnemySpawner.tscn
-res://Scenes/hud.tscn
-res://Scripts/hud.gd
-res://Scenes/world.tscn
-res://Scripts/world.gd
-res://Scripts/player.gd
+res://Scripts/enemy.gd
+res://Scenes/player.tscn
