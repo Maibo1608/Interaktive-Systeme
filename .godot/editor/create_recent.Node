@@ -1,3 +1,4 @@
+Timer
 Sprite2D
 Button
 MenuButton
@@ -5,7 +6,6 @@ VBoxContainer
 Panel
 Control
 ProgressBar
-Timer
 Node2D
 Area2D
 CollisionShape2D

@@ -380,10 +380,12 @@ collision_layer = 2
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_0316m")
-health = 100
+health = 10
+max_health = 10
 dam = 20.0
 spawn_time = 1
 xp = 10000
+showHealthbar = true
 speed = 40.0
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
@@ -405,6 +407,7 @@ scale = Vector2(1.5, 1.5)
 shape = SubResource("CapsuleShape2D_slj47")
 
 [node name="Healthbar" type="ProgressBar" parent="."]
+visible = false
 offset_left = -74.0
 offset_top = 52.0
 offset_right = 67.0

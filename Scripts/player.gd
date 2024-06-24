@@ -14,7 +14,7 @@ var max_health = 100
 var current_xp = 0
 var xp_threshold = 100
 var current_lvl = 1
-var health = 100
+var health = 1
 var basespeed = 400
 var speed = basespeed
 
@@ -80,6 +80,8 @@ func _on_area_2d_body_entered(body):
 	if body.is_dying == false:
 		damage(body.dam)
 		body.queue_free()
+	#if body.is_dying == true:
+		
 
 
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://cyymwji00epmb"]
+[gd_scene load_steps=21 format=3 uid="uid://cyymwji00epmb"]
 
 [ext_resource type="Script" path="res://Scripts/world.gd" id="1_8pu83"]
 [ext_resource type="PackedScene" uid="uid://ch2ty1ue7e3sj" path="res://Scenes/player.tscn" id="2_ejwty"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://djr5wwtma4o23" path="res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn" id="10_w6ype"]
 [ext_resource type="PackedScene" uid="uid://ctdkkrxhmw0mh" path="res://Scenes/Enemies/Enemy_Orc_Slime_16Bit.tscn" id="11_6xq2q"]
 [ext_resource type="PackedScene" uid="uid://dyqbfiqm0aco6" path="res://Scenes/Enemies/Enemy_Orc_Shaman_16Bit.tscn" id="11_oobqe"]
+[ext_resource type="PackedScene" uid="uid://ca7y4uloaefcy" path="res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn" id="12_oaejx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h3rxj"]
 texture = ExtResource("2_q8akv")
@@ -2978,10 +2979,10 @@ sources/0 = SubResource("TileSetAtlasSource_h3rxj")
 [sub_resource type="Resource" id="Resource_7c08e"]
 script = ExtResource("7_sia5l")
 time_start = 1
-time_end = 60
+time_end = 35
 enemy = ExtResource("6_n608x")
 enemy_num = 1
-enemy_spawn_delay = 1
+enemy_spawn_delay = 5
 
 [sub_resource type="Resource" id="Resource_hnw87"]
 script = ExtResource("7_sia5l")
@@ -3014,6 +3015,14 @@ time_end = 91
 enemy = ExtResource("11_6xq2q")
 enemy_num = 1
 enemy_spawn_delay = 5
+
+[sub_resource type="Resource" id="Resource_885st"]
+script = ExtResource("7_sia5l")
+time_start = 61
+time_end = 121
+enemy = ExtResource("12_oaejx")
+enemy_num = 1
+enemy_spawn_delay = 60
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -3054,6 +3063,11 @@ wait_time = 2.0
 autostart = true
 
 [node name="EnemySpawner" parent="." instance=ExtResource("5_vg0il")]
-spawns = Array[ExtResource("7_sia5l")]([SubResource("Resource_7c08e"), SubResource("Resource_hnw87"), SubResource("Resource_imgyy"), SubResource("Resource_wioct"), SubResource("Resource_k7m3i")])
+spawns = Array[ExtResource("7_sia5l")]([SubResource("Resource_7c08e"), SubResource("Resource_hnw87"), SubResource("Resource_imgyy"), SubResource("Resource_wioct"), SubResource("Resource_k7m3i"), SubResource("Resource_885st")])
+
+[node name="RestartTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
 
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
+[connection signal="timeout" from="RestartTimer" to="." method="_on_restart_timer_timeout"]

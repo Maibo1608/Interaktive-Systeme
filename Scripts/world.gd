@@ -3,7 +3,8 @@ extends Node
 @onready var player = $Player
 @onready var hud = $HUD
 @onready var enemy_spawner = $EnemySpawner
-
+@onready var menu = get_tree().get_first_node_in_group("Menu")
+@onready var restartTimer = $RestartTimer
 
 var score = 0
 
@@ -18,9 +19,10 @@ func _ready():
 	hud.player = player
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Called every frame. 'delta' is the elapsed time since the previous frame.S
 func _process(delta):
 	pass
+		
 
 func new_game():
 	score = 0
@@ -38,10 +40,16 @@ func _on_enemy_killed(points, xp):
 func _on_player_dying():
 	hud.death_screen.visible = true
 	get_tree().paused = true
+	print("hud has shown")
+	restartTimer.autostart = true
+	
+	
 
 func _on_player_lvlup():
 	hud.lvlup()
 	get_tree().paused = true
-	
 
 
+func _on_restart_timer_timeout():
+	print("restart game")
+	get_tree().change_scene("res://Scenes/main_menu.tscn")

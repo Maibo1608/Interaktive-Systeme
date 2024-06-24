@@ -2,6 +2,7 @@ extends RigidBody2D
 
 @onready var visuals = $visuals
 @onready var silhouette = $silhouette
+@onready var healthbar = $Healthbar
 @onready var player = get_tree().get_first_node_in_group("player")
 
 signal killed(points, xp)
@@ -9,6 +10,7 @@ signal killed(points, xp)
 var is_dying = false
 var got_hit = false
 @export var health:= 1
+@export var max_health:= 1
 @export var dam: = 10.0
 @export var points = 100
 @export var spawn_time = 10;
@@ -21,8 +23,15 @@ var got_hit = false
 func _ready():
 	visuals.animation = "idle2"
 	visuals.play()
+	
 	if (showHealthbar == true):
-		pass
+		healthbar.visible = true
+		healthbar.max_value = max_health
+		healthbar.value = health
+			
+
+func set_health_bar () -> void:
+	healthbar.value = health
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -42,6 +51,8 @@ func _physics_process(delta):
 func take_damage(amount: int)-> void:
 	
 	health = health-amount
+	if (showHealthbar == true):
+		set_health_bar()
 	
 	
 	if health <= 0:
