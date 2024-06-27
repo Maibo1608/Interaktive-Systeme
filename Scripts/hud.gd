@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var score = $HBoxContainer/VBoxContainer/score_value
 @onready var death_screen = $death_screen
 @onready var xpbar = $xpbar
+@onready var lvlup_screen = $lvlup_screen
 
 
 @export var player:= CharacterBody2D
@@ -29,3 +30,39 @@ func lvlup():
 	xpbar.max_value = player.current_lvl * 100
 	xpbar.value = 0
 	
+	lvlup_screen.visible = true
+	
+	
+
+
+func _on_button_pressed():
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+
+
+func _on_attack_1_pressed():
+	player.attack1_lvl+=1
+	get_tree().paused = false
+	lvlup_screen.visible = false
+
+
+func _on_attack_2_pressed():
+	player.attack2_lvl+=1
+	get_tree().paused = false
+	lvlup_screen.visible = false
+
+
+func _on_heart_pressed():
+	player.heart_lvl+=1
+	player.healthbar.max_value +=20
+	player.health += 20
+	player.max_health += 20
+	get_tree().paused = false
+	lvlup_screen.visible = false
+
+
+func _on_boots_pressed():
+	player.boots_lvl+=1
+	player.speed += 20
+	get_tree().paused = false
+	lvlup_screen.visible = false

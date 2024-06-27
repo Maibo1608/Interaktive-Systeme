@@ -14,9 +14,8 @@ var max_health = 100
 var current_xp = 0
 var xp_threshold = 100
 var current_lvl = 1
-var health = 1
-var basespeed = 400
-var speed = basespeed
+var health = 100
+var speed = 400
 
 #Ability Levels
 var attack1_lvl = 1
@@ -30,13 +29,12 @@ func _ready():
 	
 func set_health_bar () -> void:
 	healthbar.value = health
-func change_stats():
-	healthbar.max_value = max_health + (heart_lvl * 20)
-	speed = basespeed + (boots_lvl * 20)
+
 func _process(delta):
 	if current_xp >= xp_threshold:
 		current_xp -= xp_threshold
 		current_lvl += 1
+		xp_threshold+=100
 		lvlup.emit()
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
@@ -80,8 +78,8 @@ func _on_area_2d_body_entered(body):
 	if body.is_dying == false:
 		damage(body.dam)
 		body.queue_free()
-	#if body.is_dying == true:
-		
+	if body.is_dying == true:
+		pass
 
 
 

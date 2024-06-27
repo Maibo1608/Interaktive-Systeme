@@ -4,7 +4,6 @@ extends Node
 @onready var hud = $HUD
 @onready var enemy_spawner = $EnemySpawner
 @onready var menu = get_tree().get_first_node_in_group("Menu")
-@onready var restartTimer = $RestartTimer
 
 var score = 0
 
@@ -40,8 +39,6 @@ func _on_enemy_killed(points, xp):
 func _on_player_dying():
 	hud.death_screen.visible = true
 	get_tree().paused = true
-	print("hud has shown")
-	restartTimer.autostart = true
 	
 	
 
@@ -50,6 +47,3 @@ func _on_player_lvlup():
 	get_tree().paused = true
 
 
-func _on_restart_timer_timeout():
-	print("restart game")
-	get_tree().change_scene("res://Scenes/main_menu.tscn")

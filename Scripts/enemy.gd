@@ -14,7 +14,7 @@ var got_hit = false
 @export var dam: = 10.0
 @export var points = 100
 @export var spawn_time = 10;
-@export var xp = 10
+@export var xp = 50
 @export var showHealthbar = false;
 
 @export var speed := 100.0
