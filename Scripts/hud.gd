@@ -2,6 +2,7 @@ extends CanvasLayer
 
 @onready var time = $HBoxContainer/VBoxContainer/time_value
 @onready var score = $HBoxContainer/VBoxContainer/score_value
+@onready var highscore = $HBoxContainer/VBoxContainer/highscore_value
 @onready var death_screen = $death_screen
 @onready var xpbar = $xpbar
 @onready var lvlup_screen = $lvlup_screen
@@ -22,9 +23,23 @@ func _process(delta):
 
 func update_score(value):
 	score.text = str(value)
+	print("update_score")
+	print(SaveLoad.highest_record)
+	
+func on_save_score(value):
+	if value > SaveLoad.highest_record:
+		SaveLoad.highest_record = value
+		highscore.text = str(value)
+	SaveLoad.save_score()
+	print("update_highscore")
+	
+func show_highscore():
+	highscore.text = str(SaveLoad.highest_record)
+	print("show_highscore")
 
 func update_xpbar(xp):
 	xpbar.value += xp
+	
 
 func lvlup():
 	xpbar.max_value = player.current_lvl * 100

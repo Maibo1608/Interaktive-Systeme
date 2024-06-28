@@ -118,6 +118,13 @@ label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="highscore_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Highscore:"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
 
@@ -130,6 +137,13 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="score_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_ayadn")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="highscore_value" type="Label" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_ayadn")

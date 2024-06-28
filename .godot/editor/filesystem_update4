@@ -1,8 +1,9 @@
-res://Scenes/hud.tscn
-res://Scripts/hud.gd
-res://Scenes/player.tscn
-res://Scripts/player.gd
 res://Scenes/main_menu.tscn
+res://Scripts/hud.gd
+res://save_load.gd
+res://Scenes/hud.tscn
+res://Scripts/world.gd
 res://Scenes/world.tscn
+res://Scenes/player.tscn
 res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
 res://Scenes/Enemies/Enemy_Orc_16Bit.tscn
