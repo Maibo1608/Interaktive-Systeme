@@ -1,19 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719575779
+::res://::1719580220
 export_presets.cfg::TextFile::-1::1717527016::0::1::::<><>::
 icon.svg::CompressedTexture2D::7569977851788250016::1714378688::1714378688::1::::<><>::
-::res://Scenes/::1719510350
+save_load.gd::GDScript::-1::1719579657::0::1::::<>Node<>::
+::res://Scenes/::1719585508
 EnemySpawner.tscn::PackedScene::8231640290368032414::1719251526::0::1::::<><>::res://Scripts/EnemySpawner.gd<>res://Scripts/spawn_info.gd<>uid://ca7y4uloaefcy::::res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
-hud.tscn::PackedScene::4077479679207676886::1719510350::0::1::::<><>::res://Scripts/hud.gd<>uid://bwo83yymfg15k::::res://Textures/Icons/staff_01d.png<>uid://c8w8pcgxmln5g::::res://Textures/Icons/sword_02c.png
+hud.tscn::PackedScene::4077479679207676886::1719585508::0::1::::<><>::res://Scripts/hud.gd<>uid://bwo83yymfg15k::::res://Textures/Icons/staff_01d.png<>uid://c8w8pcgxmln5g::::res://Textures/Icons/sword_02c.png
 lvlup_screen.tscn::PackedScene::4944133544733108106::1719168512::0::1::::<><>::
-main_menu.tscn::PackedScene::3059373882847460023::1719510349::0::1::::<><>::res://Scripts/main_menu.gd
-player.tscn::PackedScene::5321099350856209789::1719510349::0::1::::<><>::res://Scripts/player.gd<>uid://lbh2tih22xln::::res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png
-world.tscn::PackedScene::6507687058413574821::1719510350::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn<>res://Scripts/spawn_info.gd<>uid://c5efevnqyknha::::res://Scenes/Enemies/Enemy_Orc_16Bit.tscn<>uid://djr5wwtma4o23::::res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn<>uid://ctdkkrxhmw0mh::::res://Scenes/Enemies/Enemy_Orc_Slime_16Bit.tscn<>uid://dyqbfiqm0aco6::::res://Scenes/Enemies/Enemy_Orc_Shaman_16Bit.tscn<>uid://ca7y4uloaefcy::::res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
+main_menu.tscn::PackedScene::3059373882847460023::1719585507::0::1::::<><>::res://Scripts/main_menu.gd
+player.tscn::PackedScene::5321099350856209789::1719585507::0::1::::<><>::res://Scripts/player.gd<>uid://lbh2tih22xln::::res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png<>res://shaders/silhouette.gdshader<>uid://nkqkgk3qubn7::::res://Textures/attacks/SP301_nyknck/SP301_01.png<>uid://bvuwbrbvj0o72::::res://Textures/attacks/SP301_nyknck/SP301_02.png<>uid://cqipsivrlmwe0::::res://Textures/attacks/SP301_nyknck/SP301_03.png<>uid://knuhvu5ges4j::::res://Textures/attacks/SP301_nyknck/SP301_04.png<>uid://xfgg0w23t7au::::res://sounds/Hit damage 1.wav<>uid://78f8qw0ibifa::::res://Textures/attacks/SP301_nyknck/SP301_05.png<>uid://b3pfq8nohlyco::::res://sounds/Classic Arcade SFX/Hit/Hit_3.wav
+world.tscn::PackedScene::6507687058413574821::1719585508::0::1::::<><>::res://Scripts/world.gd<>uid://ch2ty1ue7e3sj::::res://Scenes/player.tscn<>uid://cvind2inxhpc4::::res://Textures/background/tilemap1.png<>uid://bydfq20lrga8u::::res://Scenes/hud.tscn<>uid://dpjp6bludgedi::::res://Scenes/EnemySpawner.tscn<>uid://b8uuruy3hcybn::::res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn<>res://Scripts/spawn_info.gd<>uid://c5efevnqyknha::::res://Scenes/Enemies/Enemy_Orc_16Bit.tscn<>uid://djr5wwtma4o23::::res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn<>uid://ctdkkrxhmw0mh::::res://Scenes/Enemies/Enemy_Orc_Slime_16Bit.tscn<>uid://dyqbfiqm0aco6::::res://Scenes/Enemies/Enemy_Orc_Shaman_16Bit.tscn<>uid://ca7y4uloaefcy::::res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn<>uid://dnafj48gxqj28::::res://sounds/gameover.wav
 ::res://Scenes/attacks/::1719070614
 fireball.tscn::PackedScene::156713524941627256::1719070614::0::1::::<><>::uid://b83kkvtxixdvo::::res://Textures/attacks/fireball/FB001.png<>res://Scripts/attacks/fireball.gd<>uid://beoujsjtlbvgr::::res://Textures/attacks/fireball/FB002.png<>uid://yub5q4dr1xgv::::res://Textures/attacks/fireball/FB003.png<>uid://y52evlwwvsqe::::res://Textures/attacks/fireball/FB004.png<>uid://bjg7j1v08lh06::::res://Textures/attacks/fireball/FB005.png
-::res://Scenes/Enemies/::1719510350
-Enemy_Orc_16Bit.tscn::PackedScene::6887076039515122226::1719510350::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
-Enemy_Orc_Boss16Bit.tscn::PackedScene::4840411519461862544::1719510350::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
+::res://Scenes/Enemies/::1719585508
+Enemy_Orc_16Bit.tscn::PackedScene::6887076039515122226::1719585508::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
+Enemy_Orc_Boss16Bit.tscn::PackedScene::4840411519461862544::1719585508::0::1::::<><>::res://Scripts/enemy.gd<>uid://ch0heov6rbw5t::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Idle.png<>uid://b6n61ymj850cy::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Death.png<>uid://brx2oght3kbnc::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Hurt.png<>uid://ccl47peqgh2yl::::res://Textures/16 Bit/Orc/Orc with shadows/Orc-Walk.png<>res://shaders/silhouette.gdshader
 Enemy_Orc_Shaman.tscn::PackedScene::6758462304134282815::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://v1h0onthv1lp::::res://Textures/Orc_Shaman/Dead.png<>uid://bolsoupq71ls7::::res://Textures/Orc_Shaman/Hurt.png<>uid://cmegkuc2n0lbv::::res://Textures/Orc_Shaman/Walk.png
 Enemy_Orc_Shaman_16Bit.tscn::PackedScene::8876894433901635859::1719070887::0::1::::<><>::res://Scripts/enemy.gd<>uid://os7a6fbal0m5::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/Idle-Sheet.png<>uid://cbcvk8pj82t1s::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/Death-Sheet.png<>uid://yvna8raw66jy::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/Run-Sheet.png<>res://shaders/silhouette.gdshader
 Enemy_Orc_Slime_16Bit.tscn::PackedScene::6113248486400142355::1719070213::0::1::::<><>::res://Scripts/enemy.gd<>uid://u3lgp8321g8f::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_idle.png<>uid://gjotkhp7xx1j::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_death.png<>uid://bk8krxc82s3eg::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_hurt.png<>uid://bp05leyunlbjk::::res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_walk.png<>res://shaders/silhouette.gdshader
@@ -21,19 +22,314 @@ Enemy_Orc_Warrior.tscn::PackedScene::497963103023312826::1719065097::0::1::::<><
 Enemy_Skeleton.tscn::PackedScene::7015315073572289655::1719065097::0::1::::<><>::res://Scripts/enemy.gd<>uid://bbtv53opgbcnk::::res://Textures/Skeleton/Dead.png<>uid://ck4hhr5uwiycv::::res://Textures/Skeleton/Idle.png<>uid://bjf5osnmq5grj::::res://Textures/Skeleton/Hurt.png
 Enemy_Skeleton_16Bit.tscn::PackedScene::7827918048300881554::1719070614::0::1::::<><>::res://Scripts/enemy.gd<>uid://bupkn0mcgx4as::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Idle/Idle-Sheet.png<>uid://cnj3ovx0mxypt::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Death/Death-Sheet.png<>uid://cnegmbjddyphm::::res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Skeleton Crew/Skeleton - Base/Run/Run-Sheet.png<>res://shaders/silhouette.gdshader
 Enemy_Soldier_16Bit.tscn::PackedScene::4745185866005039247::1719070613::0::1::::<><>::res://Scripts/enemy.gd<>uid://cbtebjoo084px::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png<>uid://bwlwmlpof02uc::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png<>uid://bnbtpfg2gfy1k::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://b7lyg01mir4da::::res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png<>res://shaders/silhouette.gdshader
-::res://Scripts/::1719510320
-enemy.gd::GDScript::-1::1719510320::0::1::::<>RigidBody2D<>::
+::res://Scripts/::1719585421
+enemy.gd::GDScript::-1::1719583299::0::1::::<>RigidBody2D<>::
 EnemySpawner.gd::GDScript::-1::1719168512::0::1::::<>Node2D<>::
-hud.gd::GDScript::-1::1719510320::0::1::::<>CanvasLayer<>::
+hud.gd::GDScript::-1::1719578962::0::1::::<>CanvasLayer<>::
 main_menu.gd::GDScript::-1::1716972717::0::1::::<>Control<>::
 menu_und_co.gd::GDScript::-1::1715002892::0::1::::<>CanvasLayer<>::
-player.gd::GDScript::-1::1719510320::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1719585151::0::1::::<>CharacterBody2D<>::
 spawn_info.gd::GDScript::-1::1717261597::0::1::::Spawn_info<>Resource<>::
-world.gd::GDScript::-1::1719510320::0::1::::<>Node<>::
+world.gd::GDScript::-1::1719585421::0::1::::<>Node<>::
 ::res://Scripts/attacks/::1717439565
 fireball.gd::GDScript::-1::1717439565::0::1::::<>Node2D<>::
 ::res://shaders/::1719070890
 silhouette.gdshader::Shader::-1::1719070890::0::1::::<><>::
+::res://sounds/::1719585649
+gameover.wav::AudioStreamWAV::8072038249942388939::1698074263::1719580232::1::::<><>::
+Hit damage 1.wav::AudioStreamWAV::1625041657499480268::1719581269::1719581304::1::::<><>::
+Hit_3.wav::AudioStreamWAV::4383007883534137722::1663064514::1719585701::1::::<><>::
+Long Road Ahead.ogg::AudioStreamOggVorbis::5985054233261415047::1604618570::1719585701::1::::<><>::
+::res://sounds/16-Bit Starter Pack/::1719580822
+LICENSE NOTES AND RESTRICTIONS.txt::TextFile::-1::1645373710::0::1::::<><>::
+::res://sounds/16-Bit Starter Pack/Battle/::1719580871
+Battle Mage.ogg::AudioStreamOggVorbis::3416964068889987635::1688071448::1719580870::1::::<><>::
+Battle with Beasts.ogg::AudioStreamOggVorbis::6904009722987073696::1688071448::1719580870::1::::<><>::
+Final Showdown.ogg::AudioStreamOggVorbis::1215768059676191691::1688071448::1719580870::1::::<><>::
+I've Got Your Back! (Full).ogg::AudioStreamOggVorbis::5200844322636503636::1596471370::1719580871::1::::<><>::
+I've Got Your Back! (Intro).ogg::AudioStreamOggVorbis::2102678199183086435::1596471494::1719580870::1::::<><>::
+I've Got Your Back! (Main Loop).ogg::AudioStreamOggVorbis::1383243970114192959::1596471482::1719580871::1::::<><>::
+If It's a Fight You Want.ogg::AudioStreamOggVorbis::897345094078129602::1688071448::1719580871::1::::<><>::
+It's Bossin Time.ogg::AudioStreamOggVorbis::4009066427369968275::1688071448::1719580871::1::::<><>::
+::res://sounds/16-Bit Starter Pack/Dungeons/::1719580871
+Altered Paths.ogg::AudioStreamOggVorbis::6528351257665681404::1633612390::1719580871::1::::<><>::
+Crystal Clear.ogg::AudioStreamOggVorbis::1458922503257164994::1688072682::1719580871::1::::<><>::
+Heavy Air.ogg::AudioStreamOggVorbis::1980172175245039412::1688071450::1719580871::1::::<><>::
+No Sunlight Here.ogg::AudioStreamOggVorbis::6061360684776172409::1688071450::1719580871::1::::<><>::
+Outside The Ruins.ogg::AudioStreamOggVorbis::6411743986693947676::1688071450::1719580871::1::::<><>::
+Spider's Grotto.ogg::AudioStreamOggVorbis::2134567870877131017::1688071450::1719580871::1::::<><>::
+Temple of Tomb.ogg::AudioStreamOggVorbis::967808274237570772::1688071450::1719580871::1::::<><>::
+::res://sounds/16-Bit Starter Pack/Overworld/::1719580871
+Journey Across the Blue.ogg::AudioStreamOggVorbis::351449944003590882::1688071450::1719580871::1::::<><>::
+Long Road Ahead.ogg::AudioStreamOggVorbis::5985054233261415047::1604618570::1719580871::1::::<><>::
+On The Move.ogg::AudioStreamOggVorbis::806910250453128345::1688072680::1719580871::1::::<><>::
+We're Bird People Now.ogg::AudioStreamOggVorbis::7978928338529767138::1688071450::1719580871::1::::<><>::
+World Travelers.ogg::AudioStreamOggVorbis::3805372189692123629::1688071450::1719580871::1::::<><>::
+::res://sounds/16-Bit Starter Pack/Towns/::1719580870
+Bustling Streets.ogg::AudioStreamOggVorbis::3779955778774425607::1688071450::1719580870::1::::<><>::
+Farm Life.ogg::AudioStreamOggVorbis::2201461581176184805::1688071450::1719580870::1::::<><>::
+Ghost Alley.ogg::AudioStreamOggVorbis::5359108666471271969::1688071450::1719580870::1::::<><>::
+Merch City.ogg::AudioStreamOggVorbis::5285383939985734912::1616691690::1719580870::1::::<><>::
+Remnants of What Once Was.ogg::AudioStreamOggVorbis::1080841738715739053::1688071450::1719580870::1::::<><>::
+Returning Home.ogg::AudioStreamOggVorbis::1507291142982948607::1688071450::1719580870::1::::<><>::
+Smooth As Glass.ogg::AudioStreamOggVorbis::7142486792642699883::1688071450::1719580870::1::::<><>::
+::res://sounds/16-Bit Starter Pack/Various Themes/::1719580870
+A Little R & R.ogg::AudioStreamOggVorbis::6966489723159277159::1688072682::1719580870::1::::<><>::
+Fisticuffs and Ale.ogg::AudioStreamOggVorbis::2877992724398945310::1688071452::1719580870::1::::<><>::
+Hall of the King.ogg::AudioStreamOggVorbis::3121669011625633790::1688071452::1719580870::1::::<><>::
+How Did We Do.ogg::AudioStreamOggVorbis::3936888013009943035::1596471796::1719580870::1::::<><>::
+Minigame Monkey.ogg::AudioStreamOggVorbis::8142517151858700648::1688072680::1719580870::1::::<><>::
+Origins.ogg::AudioStreamOggVorbis::8644539118416296080::1688071452::1719580870::1::::<><>::
+Outside the Colosseum.ogg::AudioStreamOggVorbis::2110200419550972589::1688071452::1719580870::1::::<><>::
+Past, Present, Future.ogg::AudioStreamOggVorbis::3144692060232945660::1688071452::1719580870::1::::<><>::
+Simpler Times.ogg::AudioStreamOggVorbis::8143310368049948726::1688071452::1719580870::1::::<><>::
+To Suffer a Loss (Game Over).ogg::AudioStreamOggVorbis::4238839030849849447::1596544934::1719580870::1::::<><>::
+Victorious.ogg::AudioStreamOggVorbis::4700544582361968196::1596471754::1719580870::1::::<><>::
+Waiting.ogg::AudioStreamOggVorbis::3604628691757009798::1688072676::1719580870::1::::<><>::
+::res://sounds/Classic Arcade SFX/::1719583981
+::res://sounds/Classic Arcade SFX/Alarms and sirens/::1719583987
+Alarm_high pitch.wav::AudioStreamWAV::8270553435122813126::1662631520::1719583987::1::::<><>::
+Alarm_slight static.wav::AudioStreamWAV::9129029939198896550::1662630206::1719583987::1::::<><>::
+Alarm_Warning chime.wav::AudioStreamWAV::2624548099396120721::1662629462::1719583987::1::::<><>::
+Ringing_high pitch.wav::AudioStreamWAV::2787383438895102163::1662630452::1719583987::1::::<><>::
+siren.wav::AudioStreamWAV::8756185975384012708::1662630262::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/coins/::1719583987
+Coin.wav::AudioStreamWAV::2500848707904160523::1662629478::1719583987::1::::<><>::
+Coin_2.wav::AudioStreamWAV::4005782521061284033::1662629636::1719583987::1::::<><>::
+Coin_3.wav::AudioStreamWAV::5927946718061057226::1662631026::1719583987::1::::<><>::
+Coin_4.wav::AudioStreamWAV::3952469827728771856::1662631038::1719583987::1::::<><>::
+Coin_5.wav::AudioStreamWAV::2265903124929751830::1662631050::1719583987::1::::<><>::
+Coin_6.wav::AudioStreamWAV::18930921920985397::1662631064::1719583987::1::::<><>::
+Coin_7.wav::AudioStreamWAV::1188262436201189954::1662631076::1719583987::1::::<><>::
+coin_8.wav::AudioStreamWAV::5702317043584382829::1662662416::1719583987::1::::<><>::
+Coin_9.wav::AudioStreamWAV::2371664878331432775::1662662428::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Explosions/::1719583987
+Explosion.wav::AudioStreamWAV::5966933447079476590::1662629234::1719583987::1::::<><>::
+Explosion_2.wav::AudioStreamWAV::4341725427403101783::1662629248::1719583987::1::::<><>::
+Explosion_3.wav::AudioStreamWAV::453240324273942170::1662629332::1719583987::1::::<><>::
+Explosion_4.wav::AudioStreamWAV::1771674880332246797::1662629346::1719583987::1::::<><>::
+Explosion_5.wav::AudioStreamWAV::7255688788915952612::1662630770::1719583987::1::::<><>::
+Explosion_6.wav::AudioStreamWAV::1587306475508529969::1662630844::1719583987::1::::<><>::
+Explosion_7.wav::AudioStreamWAV::4635227078346373641::1662631496::1719583987::1::::<><>::
+Explosion_8.wav::AudioStreamWAV::5581619606868636733::1662662468::1719583987::1::::<><>::
+Explosion_9.wav::AudioStreamWAV::3498188207213889199::1662662480::1719583987::1::::<><>::
+Explosion_10.wav::AudioStreamWAV::2715638911706405224::1662662488::1719583987::1::::<><>::
+Repeating explosion.wav::AudioStreamWAV::1795599619478913876::1662629080::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Hit/::1719583987
+Hit.wav::AudioStreamWAV::1689988435819284029::1662662394::1719583987::1::::<><>::
+Hit_2.wav::AudioStreamWAV::3168234087131878156::1663064510::1719583987::1::::<><>::
+Hit_3.wav::AudioStreamWAV::4383007883534137722::1663064514::1719583987::1::::<><>::
+Hit_4.wav::AudioStreamWAV::2518234741736011737::1663064526::1719583987::1::::<><>::
+Hit_5.wav::AudioStreamWAV::4899315641061141831::1662630942::1719583987::1::::<><>::
+Hit_long.wav::AudioStreamWAV::5137999636403583802::1662662440::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Jumps/::1719583987
+Jump.wav::AudioStreamWAV::8974940122515356877::1662629524::1719583987::1::::<><>::
+Jump_2.wav::AudioStreamWAV::1137894306360356913::1662630312::1719583987::1::::<><>::
+Jump_3.wav::AudioStreamWAV::2272493036653556398::1662630668::1719583987::1::::<><>::
+Jump_4.wav::AudioStreamWAV::8169418869503635038::1662630890::1719583987::1::::<><>::
+Jump_5.wav::AudioStreamWAV::6231187790747098491::1662630908::1719583987::1::::<><>::
+Jump_6.wav::AudioStreamWAV::8256472874775000188::1662630926::1719583987::1::::<><>::
+Jump_7.wav::AudioStreamWAV::2803732006662921242::1662662334::1719583987::1::::<><>::
+Jump_8.wav::AudioStreamWAV::3649143512773526082::1662662344::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Lasers and shooting/::1719583987
+Laser.wav::AudioStreamWAV::1168847449216891251::1662629174::1719583987::1::::<><>::
+Laser_2.wav::AudioStreamWAV::2839366892592578717::1662629212::1719583987::1::::<><>::
+Laser_3.wav::AudioStreamWAV::8889521190927892439::1662629794::1719583987::1::::<><>::
+Laser_4.wav::AudioStreamWAV::7828800145128922384::1663064446::1719583987::1::::<><>::
+Laser_5.wav::AudioStreamWAV::3923378008653670152::1663064456::1719583987::1::::<><>::
+Repeating shot.wav::AudioStreamWAV::3255917571928023998::1662630064::1719583987::1::::<><>::
+Repeating shot_2.wav::AudioStreamWAV::7075584104360637900::1662630348::1719583987::1::::<><>::
+Shoot_1.wav::AudioStreamWAV::687227226869855871::1662662358::1719583987::1::::<><>::
+Shoot_2.wav::AudioStreamWAV::6634688038094085905::1662662370::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Misc/::1719583987
+Bass Buzz_warning sound.wav::AudioStreamWAV::1854998842128029422::1662629558::1719583987::1::::<><>::
+Bass climb to static.wav::AudioStreamWAV::4004535200354448629::1662629732::1719583987::1::::<><>::
+Bass climb.wav::AudioStreamWAV::6181170829820545071::1662630694::1719583987::1::::<><>::
+Bass wave.wav::AudioStreamWAV::3106226307418746293::1662629584::1719583987::1::::<><>::
+Bass wave_2.wav::AudioStreamWAV::659349994143488463::1662630094::1719583987::1::::<><>::
+Bass wave_3.wav::AudioStreamWAV::1338171426816164619::1662630490::1719583987::1::::<><>::
+Bass wave_fast.wav::AudioStreamWAV::325664704554663839::1662629618::1719583987::1::::<><>::
+Bass wave_long.wav::AudioStreamWAV::1657688871679009418::1662629600::1719583987::1::::<><>::
+Electronic oops.wav::AudioStreamWAV::5884415490771104286::1662629686::1719583987::1::::<><>::
+Electronic oops_2.wav::AudioStreamWAV::5718239229491877722::1662629700::1719583987::1::::<><>::
+Electronic oops_3.wav::AudioStreamWAV::8777086978971094915::1662630296::1719583987::1::::<><>::
+Ocean.wav::AudioStreamWAV::5180286844466002495::1662630998::1719583987::1::::<><>::
+Shiny_object.wav::AudioStreamWAV::1133061747000935813::1662629512::1719583987::1::::<><>::
+Soft chime.wav::AudioStreamWAV::677808252899804370::1662630166::1719583987::1::::<><>::
+Soft chime_wobble.wav::AudioStreamWAV::2387150439604339584::1662630534::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Power ups and power downs/::1719583987
+power down_high pitch.wav::AudioStreamWAV::4909370315751139035::1662629670::1719583987::1::::<><>::
+Power_up.wav::AudioStreamWAV::4472276733429965997::1662662446::1719583987::1::::<><>::
+Power_Up_2.wav::AudioStreamWAV::2361576524305197240::1662662450::1719583987::1::::<><>::
+Power_up_3.wav::AudioStreamWAV::1581583863128177810::1662662458::1719583987::1::::<><>::
+Power_up_4.wav::AudioStreamWAV::7322199748452984630::1663064474::1719583987::1::::<><>::
+Power_up_5.wav::AudioStreamWAV::1626304316587525147::1663064480::1719583987::1::::<><>::
+Power_up_6.wav::AudioStreamWAV::306390976862902949::1663064486::1719583987::1::::<><>::
+Power_up_7.wav::AudioStreamWAV::47121333800119218::1662630970::1719583987::1::::<><>::
+::res://sounds/Classic Arcade SFX/Scifi/::1719583987
+Booster.wav::AudioStreamWAV::4289451828918639308::1662630798::1719583987::1::::<><>::
+Booster_static.wav::AudioStreamWAV::5400083742592261864::1662630044::1719583987::1::::<><>::
+Booster_static_2.wav::AudioStreamWAV::1827084691026583452::1662630124::1719583987::1::::<><>::
+Repeating Scifi Beam.wav::AudioStreamWAV::5963950960208466260::1662629420::1719583987::1::::<><>::
+Repeating Scifi Beam_2.wav::AudioStreamWAV::8286911832474290238::1662630864::1719583987::1::::<><>::
+Scifi waves.wav::AudioStreamWAV::8400670554318794430::1662629312::1719583987::1::::<><>::
+Scifi waves_2.wav::AudioStreamWAV::4440349824172522307::1662630986::1719583987::1::::<><>::
+Scifi waves_fast.wav::AudioStreamWAV::9028788189673345947::1662629750::1719583987::1::::<><>::
+Scifi waves_fast_long.wav::AudioStreamWAV::8093221071752067790::1662629770::1719583987::1::::<><>::
+::res://sounds/Retro Sounds/::1719581085
+::res://sounds/Retro Sounds/audio effects retro/::1719581304
+Blade (need edit).wav::AudioStreamWAV::6227196711524470736::1614851136::1719581304::1::::<><>::
+Blade.wav::AudioStreamWAV::5410604465661591815::1616573930::1719581304::1::::<><>::
+menu select.wav::AudioStreamWAV::3047398050313256644::1610448788::1719581304::1::::<><>::
+need edit 2.wav::AudioStreamWAV::6627141249310967492::1612179420::1719581304::1::::<><>::
+need edit.wav::AudioStreamWAV::8091593523756974289::1612179404::1719581304::1::::<><>::
+select sound.wav::AudioStreamWAV::2549350161205987457::1608874392::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/::1719581085
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/animal/::1719581304
+angry animal.wav::AudioStreamWAV::7218179328730358819::1616161612::1719581304::1::::<><>::
+animal curious.wav::AudioStreamWAV::7137335950339245769::1616161612::1719581304::1::::<><>::
+animal friendly.wav::AudioStreamWAV::9030362087182027222::1616161612::1719581304::1::::<><>::
+animal timid.wav::AudioStreamWAV::4938056579412675502::1616161612::1719581304::1::::<><>::
+bird 1.wav::AudioStreamWAV::8487059765829950595::1616161612::1719581304::1::::<><>::
+bird 2.wav::AudioStreamWAV::4266075319589540566::1616161612::1719581304::1::::<><>::
+bird 3.wav::AudioStreamWAV::966270213906155951::1616161614::1719581304::1::::<><>::
+bird 4.wav::AudioStreamWAV::7557030040843985083::1616161614::1719581304::1::::<><>::
+bird 5.wav::AudioStreamWAV::2015939146572972251::1616161614::1719581304::1::::<><>::
+happy bird.wav::AudioStreamWAV::8071928772690698662::1616161614::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/::1719581085
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/actions and reactions interactions/::1719581304
+cool thing.wav::AudioStreamWAV::3183928145391257768::1609656012::1719581304::1::::<><>::
+embarrassed.wav::AudioStreamWAV::348802526762632103::1609655936::1719581304::1::::<><>::
+fall.wav::AudioStreamWAV::2258913283883953977::1611461758::1719581304::1::::<><>::
+jump.wav::AudioStreamWAV::8614447056744438977::1611461546::1719581304::1::::<><>::
+question.wav::AudioStreamWAV::577812657548665943::1612179436::1719581304::1::::<><>::
+taking item.wav::AudioStreamWAV::7091032821446470175::1612179360::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/actions and reactions interactions/attack/::1719581304
+attack variation.wav::AudioStreamWAV::4201747754237529785::1609657190::1719581304::1::::<><>::
+hit 1 fast attack.wav::AudioStreamWAV::1752189493994630301::1608876784::1719581304::1::::<><>::
+hit 2 medio attack.wav::AudioStreamWAV::5684517685015530194::1608855380::1719581304::1::::<><>::
+hit 3 strong attack.wav::AudioStreamWAV::5603688065644587264::1608876722::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/actions and reactions interactions/Dialogs sounds/::1719581304
+Dialog voice 1.wav::AudioStreamWAV::7066448103038880214::1608871258::1719581304::1::::<><>::
+Dialog voice 2.wav::AudioStreamWAV::468130680361931240::1608872156::1719581304::1::::<><>::
+Dialog voice 3.wav::AudioStreamWAV::2902530239867950199::1608872432::1719581304::1::::<><>::
+Dialog voice 4.wav::AudioStreamWAV::6984128089694905544::1608872722::1719581304::1::::<><>::
+Dialog voice 5.wav::AudioStreamWAV::8846733706291681162::1608872884::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/actions and reactions interactions/walk/::1719581304
+i recommend to check the volume.txt::TextFile::-1::1608877696::0::1::::<><>::
+walk 1 fast.wav::AudioStreamWAV::1076833455333042245::1608877390::1719581304::1::::<><>::
+walk 2 medium.wav::AudioStreamWAV::7193015226867809726::1608714672::1719581304::1::::<><>::
+walk 3 slow.wav::AudioStreamWAV::415847044670100148::1608877234::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/attack/::1719581304
+attack variation.wav::AudioStreamWAV::8906685850366512766::1609675190::1719581304::1::::<><>::
+hit 1 fast attack.wav::AudioStreamWAV::1781920613074011180::1608894784::1719581304::1::::<><>::
+hit 2 medio attack.wav::AudioStreamWAV::1488613635884117116::1608873380::1719581304::1::::<><>::
+hit 3 strong attack.wav::AudioStreamWAV::7116486285034962014::1608894722::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/Dialogs sounds/::1719581304
+Dialog voice 1.wav::AudioStreamWAV::5936389568682899365::1608889258::1719581304::1::::<><>::
+Dialog voice 2.wav::AudioStreamWAV::2612797748129633469::1608890156::1719581304::1::::<><>::
+Dialog voice 3.wav::AudioStreamWAV::7512250341469977340::1608890432::1719581304::1::::<><>::
+Dialog voice 4.wav::AudioStreamWAV::5130472024420871025::1608890722::1719581304::1::::<><>::
+Dialog voice 5.wav::AudioStreamWAV::5190127574737726116::1608890884::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Animal and caracters/characters/walk/::1719581304
+i recommend to check the volume.txt::TextFile::-1::1608895696::0::1::::<><>::
+walk 1 fast.wav::AudioStreamWAV::4949753668041403384::1608895390::1719581304::1::::<><>::
+walk 2 medium.wav::AudioStreamWAV::7023486183754304793::1608732672::1719581304::1::::<><>::
+walk 3 slow.wav::AudioStreamWAV::2477602434602589414::1608895234::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/atmosphere/::1719581304
+Atmosphere industrial.wav::AudioStreamWAV::5688348449189237106::1614849168::1719581304::1::::<><>::
+dive.wav::AudioStreamWAV::9193835348438423394::1614848622::1719581304::1::::<><>::
+horro atmosphere.wav::AudioStreamWAV::5297718464253953773::1614850840::1719581304::1::::<><>::
+horror.wav::AudioStreamWAV::193325238740831578::1614850976::1719581304::1::::<><>::
+tense atmosphere 1.wav::AudioStreamWAV::4555207119639112893::1614850518::1719581304::1::::<><>::
+tense atmosphere 2.wav::AudioStreamWAV::1356501035694754344::1614850572::1719581304::1::::<><>::
+tense atmosphere 3.wav::AudioStreamWAV::907615748055328111::1614850600::1719581304::1::::<><>::
+tense atmosphere 4.wav::AudioStreamWAV::7789789805401799356::1614850632::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/cinematics/::1719581304
+animal going off plants.wav::AudioStreamWAV::4568412740346907796::1614848300::1719581304::1::::<><>::
+cinematic 1(no cut)(1).wav::AudioStreamWAV::3648084088358660750::1608855048::1719581304::1::::<><>::
+cinematic 1(no cut).wav::AudioStreamWAV::5575740840875032781::1608873048::1719581304::1::::<><>::
+cinematic 1.wav::AudioStreamWAV::485299458940249824::1616161612::1719581304::1::::<><>::
+cinematic 2(no cut)(1).wav::AudioStreamWAV::5749354379275574431::1608855152::1719581304::1::::<><>::
+cinematic 2(no cut).wav::AudioStreamWAV::8585625358100322663::1608873152::1719581304::1::::<><>::
+cinematic 2.wav::AudioStreamWAV::6630882148478128650::1616161612::1719581304::1::::<><>::
+cinematic 3.wav::AudioStreamWAV::479199059022759702::1616161612::1719581304::1::::<><>::
+explosion.wav::AudioStreamWAV::2931135154492394823::1616161612::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Extras/::1719581303
+select sound.wav::AudioStreamWAV::9032375936529652949::1608892392::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Extras/can use for music/::1719581304
+bassline 1.wav::AudioStreamWAV::1437513573173584258::1610430872::1719581304::1::::<><>::
+bassline 2(1).wav::AudioStreamWAV::6151684293804961044::1610686876::1719581304::1::::<><>::
+bassline 2.wav::AudioStreamWAV::7897798397509531375::1610704876::1719581304::1::::<><>::
+bassline 3(1).wav::AudioStreamWAV::6136366872855944846::1610686888::1719581304::1::::<><>::
+bassline 3.wav::AudioStreamWAV::4105582960868403823::1610704888::1719581304::1::::<><>::
+bassline 4.wav::AudioStreamWAV::1214055881735009958::1611461506::1719581304::1::::<><>::
+bassline.wav::AudioStreamWAV::7899343375182989579::1610448872::1719581304::1::::<><>::
+blip 1.wav::AudioStreamWAV::2164388710397798750::1610686768::1719581304::1::::<><>::
+blip 2.wav::AudioStreamWAV::1540356508025545800::1610686724::1719581304::1::::<><>::
+blip for grove music 2.wav::AudioStreamWAV::4731961059050057135::1610704768::1719581303::1::::<><>::
+blip for grove music.wav::AudioStreamWAV::6647956976875603861::1610704724::1719581303::1::::<><>::
+kick(1).wav::AudioStreamWAV::151964227493680322::1610430710::1719581303::1::::<><>::
+kick.wav::AudioStreamWAV::5603987751362140393::1610448710::1719581303::1::::<><>::
+sing 1.wav::AudioStreamWAV::8433812248679133964::1616161614::1719581303::1::::<><>::
+sing 2.wav::AudioStreamWAV::4824638917845456180::1616161614::1719581303::1::::<><>::
+sing 3.wav::AudioStreamWAV::3881934821882101773::1616161614::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Extras/idk/::1719581303
+1.wav::AudioStreamWAV::7368246614647150841::1609673690::1719581303::1::::<><>::
+2.wav::AudioStreamWAV::757417697024774618::1609673736::1719581303::1::::<><>::
+3.wav::AudioStreamWAV::1852867792377317298::1609673756::1719581303::1::::<><>::
+cool pigeon.wav::AudioStreamWAV::8556184594453475682::1609674012::1719581303::1::::<><>::
+embarrassed.wav::AudioStreamWAV::8044535370706112412::1609673936::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Extras/random/::1719581303
+1.wav::AudioStreamWAV::4332802033763533176::1609655690::1719581303::1::::<><>::
+2.wav::AudioStreamWAV::1141724850596081685::1609655736::1719581303::1::::<><>::
+3.wav::AudioStreamWAV::2114076211780489706::1609655756::1719581303::1::::<><>::
+zip.wav::AudioStreamWAV::2853552560694971690::1611461496::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/hud/::1719581303
+menu select.wav::AudioStreamWAV::6435981302700244084::1610430788::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Machines/::1719581304
+car sound.wav::AudioStreamWAV::6523040243363509303::1608892834::1719581304::1::::<><>::
+computer(turn off).wav::AudioStreamWAV::8959085115938037676::1608885650::1719581304::1::::<><>::
+computer(turn on).wav::AudioStreamWAV::5652157969402069519::1608876342::1719581304::1::::<><>::
+drone.wav::AudioStreamWAV::1844081080781855191::1608733534::1719581304::1::::<><>::
+guns turn off.wav::AudioStreamWAV::7545359320565354899::1614848914::1719581304::1::::<><>::
+interference.wav::AudioStreamWAV::5551156681552984712::1612179332::1719581304::1::::<><>::
+laser gun.wav::AudioStreamWAV::3910452556468748060::1611461660::1719581304::1::::<><>::
+machine stop 1.wav::AudioStreamWAV::7370726512651422804::1608727028::1719581304::1::::<><>::
+machine stop 2.wav::AudioStreamWAV::4080428312883356820::1608727102::1719581304::1::::<><>::
+machine working.wav::AudioStreamWAV::4280261020589047391::1608726998::1719581304::1::::<><>::
+scan.wav::AudioStreamWAV::6335111831505359342::1608731880::1719581304::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Machines/computers/::1719581303
+buying machine.wav::AudioStreamWAV::302251015148595643::1614849026::1719581303::1::::<><>::
+computer(turn off).wav::AudioStreamWAV::3884444452387847986::1608867650::1719581303::1::::<><>::
+computer(turn on).wav::AudioStreamWAV::8676200107068685614::1608858342::1719581303::1::::<><>::
+drone.wav::AudioStreamWAV::970471534640440101::1608715534::1719581303::1::::<><>::
+scan.wav::AudioStreamWAV::4723792275758400775::1608713880::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/Machines/menchanicals/::1719581303
+air or hydro cilinder 1.wav::AudioStreamWAV::6561980823301639534::1614849862::1719581303::1::::<><>::
+air or hydro cilinder 2.wav::AudioStreamWAV::4065031734728551153::1614849962::1719581303::1::::<><>::
+car sound.wav::AudioStreamWAV::267276013570465754::1608874834::1719581303::1::::<><>::
+little engine.wav::AudioStreamWAV::3975881189977081964::1614848780::1719581303::1::::<><>::
+machine stop 1.wav::AudioStreamWAV::6252313773493913749::1608709028::1719581303::1::::<><>::
+machine stop 2.wav::AudioStreamWAV::959986830064448537::1608709102::1719581303::1::::<><>::
+machine working.wav::AudioStreamWAV::2434252621179851773::1608708998::1719581303::1::::<><>::
+::res://sounds/Retro Sounds/audio effects retro/statistcs (progress on your game)/::1719581304
+boost(1).wav::AudioStreamWAV::8926903387129293641::1608729528::1719581304::1::::<><>::
+boost.wav::AudioStreamWAV::3082601975706803299::1608711528::1719581304::1::::<><>::
+discovery new item(1).wav::AudioStreamWAV::2479078096596872530::1608876980::1719581304::1::::<><>::
+discovery new item.wav::AudioStreamWAV::8293226018892447136::1608858980::1719581304::1::::<><>::
+door open(1).wav::AudioStreamWAV::1844291706474859281::1608730700::1719581304::1::::<><>::
+door open.wav::AudioStreamWAV::7824310033254323100::1608712700::1719581304::1::::<><>::
+Pickup Coin2(1).wav::AudioStreamWAV::368906265972421418::1610448646::1719581304::1::::<><>::
+Pickup Coin2.wav::AudioStreamWAV::9148388201205204419::1610430646::1719581304::1::::<><>::
+Pickup Coin3(1).wav::AudioStreamWAV::7155405402729867261::1610448628::1719581304::1::::<><>::
+Pickup Coin3.wav::AudioStreamWAV::2007380394976253754::1610430628::1719581304::1::::<><>::
+Pickup Coin(1).wav::AudioStreamWAV::9002108818732973862::1610448662::1719581304::1::::<><>::
+Pickup Coin.wav::AudioStreamWAV::6099197111380516946::1610430662::1719581304::1::::<><>::
+score(1).wav::AudioStreamWAV::4598345250336152945::1608892528::1719581304::1::::<><>::
+score.wav::AudioStreamWAV::4721612167745760666::1608874528::1719581304::1::::<><>::
+upgrade(1).wav::AudioStreamWAV::8231208370149250064::1608725824::1719581304::1::::<><>::
+upgrade.wav::AudioStreamWAV::8533299427611106715::1608707824::1719581304::1::::<><>::
 ::res://Textures/::1719510320
 ::res://Textures/16 Bit/::1719068671
 ::res://Textures/16 Bit/Crab Enemy Camacebra Games/::1591117480

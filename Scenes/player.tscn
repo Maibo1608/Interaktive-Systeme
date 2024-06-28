@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=42 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://lbh2tih22xln" path="res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png" id="2_yiyvf"]
@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bvuwbrbvj0o72" path="res://Textures/attacks/SP301_nyknck/SP301_02.png" id="7_v44rb"]
 [ext_resource type="Texture2D" uid="uid://cqipsivrlmwe0" path="res://Textures/attacks/SP301_nyknck/SP301_03.png" id="8_a3jvg"]
 [ext_resource type="Texture2D" uid="uid://knuhvu5ges4j" path="res://Textures/attacks/SP301_nyknck/SP301_04.png" id="9_3acoq"]
+[ext_resource type="AudioStream" uid="uid://xfgg0w23t7au" path="res://sounds/Hit damage 1.wav" id="9_txt1r"]
 [ext_resource type="Texture2D" uid="uid://78f8qw0ibifa" path="res://Textures/attacks/SP301_nyknck/SP301_05.png" id="10_sjxgx"]
+[ext_resource type="AudioStream" uid="uid://b3pfq8nohlyco" path="res://sounds/Hit_3.wav" id="10_u2l8c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sp4f5"]
 atlas = ExtResource("2_yiyvf")
@@ -427,6 +429,12 @@ shape = SubResource("RectangleShape2D_lduj2")
 [node name="reload" type="Timer" parent="attack2"]
 wait_time = 2.0
 autostart = true
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_txt1r")
+
+[node name="Damage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_u2l8c")
 
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
 [connection signal="animation_finished" from="silhouette" to="." method="_on_visuals_animation_finished"]

@@ -5,6 +5,8 @@ extends RigidBody2D
 @onready var healthbar = $Healthbar
 @onready var player = get_tree().get_first_node_in_group("player")
 
+
+
 signal killed(points, xp)
 
 var is_dying = false
@@ -49,7 +51,6 @@ func _physics_process(delta):
 
 
 func take_damage(amount: int)-> void:
-	
 	health = health-amount
 	if (showHealthbar == true):
 		set_health_bar()

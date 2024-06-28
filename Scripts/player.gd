@@ -7,6 +7,8 @@ signal lvlup
 @onready var healthbar = $Healthbar
 @onready var animation_player = $AnimationPlayer
 @onready var silhouette = $silhouette
+@onready var hit = $Hit
+@onready var damage_sound = $Damage
 
  
 #Player Stats
@@ -77,7 +79,8 @@ func damage(value) -> void:
 func _on_area_2d_body_entered(body):
 	if body.is_dying == false:
 		damage(body.dam)
-		body.queue_free()
+		damage_sound.play()
+		
 	if body.is_dying == true:
 		pass
 
@@ -85,8 +88,10 @@ func _on_area_2d_body_entered(body):
 
 
 
+
 func _on_melee_attack_1_body_entered(body):
 	body.take_damage(1)
+	hit.play()
 	print("hit")
 
 
