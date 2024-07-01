@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://ch2ty1ue7e3sj"]
+[gd_scene load_steps=44 format=3 uid="uid://ch2ty1ue7e3sj"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_jfwkt"]
 [ext_resource type="Texture2D" uid="uid://lbh2tih22xln" path="res://Textures/16 Bit/generic_char_v0.2/png/blue/char_blue_1.png" id="2_yiyvf"]
@@ -166,7 +166,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"melee_attack1",
-"speed": 25.0
+"speed": 15.0
 }]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_krh33"]
@@ -319,6 +319,32 @@ _data = {
 "attack1": SubResource("Animation_fdtxm")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ov6qf"]
+size = Vector2(52.5385, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yalsn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_bko6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_v44rb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_a3jvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3acoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sjxgx")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_k7bh6"]
 animations = [{
 "frames": [{
@@ -416,6 +442,30 @@ libraries = {
 "": SubResource("AnimationLibrary_13gsp")
 }
 
+[node name="normal_attack" type="Node2D" parent="."]
+position = Vector2(0, 21)
+
+[node name="hitbox" type="Area2D" parent="normal_attack"]
+position = Vector2(55, 1)
+scale = Vector2(1.04, 1)
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="normal_attack/hitbox"]
+position = Vector2(-14.7308, -9)
+shape = SubResource("RectangleShape2D_ov6qf")
+
+[node name="attack_visual" type="AnimatedSprite2D" parent="normal_attack"]
+visible = false
+position = Vector2(18, -8)
+scale = Vector2(2.31579, 1.28125)
+sprite_frames = SubResource("SpriteFrames_yalsn")
+frame = 4
+frame_progress = 1.0
+flip_h = true
+flip_v = true
+
 [node name="attack1" type="Node2D" parent="."]
 visible = false
 
@@ -455,6 +505,8 @@ stream = ExtResource("10_u2l8c")
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
 [connection signal="animation_finished" from="silhouette" to="." method="_on_visuals_animation_finished"]
 [connection signal="body_entered" from="hitbox" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="normal_attack/hitbox" to="." method="_on_normal_attack_body_entered"]
+[connection signal="animation_finished" from="normal_attack/attack_visual" to="." method="_on_attack_visual_animation_finished"]
 [connection signal="timeout" from="attack1/reload" to="." method="attack1"]
 [connection signal="body_entered" from="attack1/melee_attack1" to="." method="_on_melee_attack_1_body_entered"]
 [connection signal="timeout" from="attack2/reload" to="." method="attack2"]

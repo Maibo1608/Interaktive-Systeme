@@ -2,6 +2,8 @@ extends Node2D
 
 @onready var animation = $animation
 
+var dmg = 1
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rotation_degrees = randf_range(0,360)
@@ -15,5 +17,5 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body):
-	body.take_damage(1)
+	body.take_damage(dmg)
 	queue_free()
