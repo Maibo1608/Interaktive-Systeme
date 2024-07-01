@@ -6,6 +6,7 @@ extends CanvasLayer
 @onready var death_screen = $death_screen
 @onready var xpbar = $xpbar
 @onready var lvlup_screen = $lvlup_screen
+@onready var xp_label = $xpbar/xp_label
 
 
 @export var player:= CharacterBody2D
@@ -39,12 +40,12 @@ func show_highscore():
 
 func update_xpbar(xp):
 	xpbar.value += xp
-	
+	xp_label.text = "%02d / %02d" % [xpbar.value, xpbar.max_value]
 
 func lvlup():
 	xpbar.max_value = player.current_lvl * 100
 	xpbar.value = 0
-	
+	xp_label.text = "%d / %d" % [xpbar.value, xpbar.max_value]
 	lvlup_screen.visible = true
 	
 	
@@ -59,21 +60,25 @@ func _on_attack_1_pressed():
 	player.attack1_lvl+=1
 	get_tree().paused = false
 	lvlup_screen.visible = false
+	$lvlup_screen/VBoxContainer/attack1.text = "SWORD - LVL %d" % [player.attack1_lvl]
 
 
 func _on_attack_2_pressed():
 	player.attack2_lvl+=1
 	get_tree().paused = false
 	lvlup_screen.visible = false
+	$lvlup_screen/VBoxContainer/attack2.text = "FIRE STAFF - LVL %d" % [player.attack2_lvl]
 
 
 func _on_heart_pressed():
 	player.heart_lvl+=1
-	player.healthbar.max_value +=20
-	player.health += 20
 	player.max_health += 20
+	player.healthbar.max_value += 20
+	player.healthbar.value += 20
+	player.health += 20
 	get_tree().paused = false
 	lvlup_screen.visible = false
+	$lvlup_screen/VBoxContainer/heart.text = "HEALTH GEM - LVL %d" % [player.heart_lvl]
 
 
 func _on_boots_pressed():
@@ -81,3 +86,4 @@ func _on_boots_pressed():
 	player.speed += 20
 	get_tree().paused = false
 	lvlup_screen.visible = false
+	$lvlup_screen/VBoxContainer/boots.text = "BOOTS - LVL %d" % [player.boots_lvl]

@@ -1,3 +1,4 @@
+Label
 AudioStreamPlayer
 AudioStreamPlayer2D
 Button
@@ -11,4 +12,3 @@ ProgressBar
 Node2D
 Area2D
 CollisionShape2D
-AnimatedSprite2D

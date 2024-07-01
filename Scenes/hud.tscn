@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bydfq20lrga8u"]
+[gd_scene load_steps=11 format=3 uid="uid://bydfq20lrga8u"]
 
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="1_d75b4"]
 [ext_resource type="Texture2D" uid="uid://bwo83yymfg15k" path="res://Textures/Icons/staff_01d.png" id="2_qj1rv"]
 [ext_resource type="Texture2D" uid="uid://c8w8pcgxmln5g" path="res://Textures/Icons/sword_02c.png" id="3_idqe1"]
+[ext_resource type="Texture2D" uid="uid://7a4f3lgnp6ny" path="res://Textures/Icons/boots_01a.png" id="3_kvfo0"]
+[ext_resource type="Texture2D" uid="uid://bxulv66ta6di" path="res://Textures/Icons/gem_01d.png" id="4_t0ujb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vu3ik"]
 bg_color = Color(0.0768358, 0.0768358, 0.0768358, 1)
@@ -162,6 +164,22 @@ grow_horizontal = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_xocui")
 theme_override_styles/fill = SubResource("StyleBoxFlat_cqo5w")
 step = 1.0
+show_percentage = false
+
+[node name="xp_label" type="Label" parent="xpbar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "0 / 100"
 
 [node name="lvlup_screen" type="Control" parent="."]
 process_mode = 2
@@ -199,28 +217,32 @@ grow_vertical = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 6
-icon = ExtResource("2_qj1rv")
+text = "SWORD - LVL 0"
+icon = ExtResource("3_idqe1")
 expand_icon = true
 
 [node name="attack2" type="Button" parent="lvlup_screen/VBoxContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 6
-icon = ExtResource("3_idqe1")
+text = "FIRE STAFF - LVL 0"
+icon = ExtResource("2_qj1rv")
 expand_icon = true
 
 [node name="heart" type="Button" parent="lvlup_screen/VBoxContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 6
-icon = ExtResource("2_qj1rv")
+text = "HEALTH GEM - LVL 0"
+icon = ExtResource("4_t0ujb")
 expand_icon = true
 
 [node name="boots" type="Button" parent="lvlup_screen/VBoxContainer"]
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 6
-icon = ExtResource("3_idqe1")
+text = "BOOTS - LVL 0"
+icon = ExtResource("3_kvfo0")
 expand_icon = true
 
 [connection signal="pressed" from="death_screen/Button" to="." method="_on_button_pressed"]

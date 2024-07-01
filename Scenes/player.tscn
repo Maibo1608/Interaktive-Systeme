@@ -391,6 +391,22 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_443d6")
 theme_override_styles/fill = SubResource("StyleBoxFlat_e6rld")
 step = 1.0
+show_percentage = false
+
+[node name="health_label" type="Label" parent="Healthbar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "100/100"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true

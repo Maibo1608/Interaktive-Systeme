@@ -9,6 +9,7 @@ signal lvlup
 @onready var silhouette = $silhouette
 @onready var hit = $Hit
 @onready var damage_sound = $Damage
+@onready var health_label = $Healthbar/health_label
 
  
 #Player Stats
@@ -20,8 +21,8 @@ var health = 100
 var speed = 400
 
 #Ability Levels
-var attack1_lvl = 1
-var attack2_lvl = 1
+var attack1_lvl = 0
+var attack2_lvl = 0
 var heart_lvl = 0
 var boots_lvl = 0
 
@@ -29,10 +30,9 @@ func _ready():
 	healthbar.max_value = max_health
 	healthbar.value = health
 	
-func set_health_bar () -> void:
-	healthbar.value = health
 
 func _process(delta):
+	health_label.text = "%d / %d" % [health, max_health]
 	if current_xp >= xp_threshold:
 		current_xp -= xp_threshold
 		current_lvl += 1
@@ -69,7 +69,7 @@ func _physics_process(delta):
 
 func damage(value) -> void:
 	health -= value
-	set_health_bar()
+	healthbar.value -= value
 	print("damage", value)
 	if health <= 0:
 		dying.emit()
@@ -96,11 +96,13 @@ func _on_melee_attack_1_body_entered(body):
 
 
 func attack1():
-	animation_player.play("attack1")
+	if attack1_lvl >= 1:
+		animation_player.play("attack1")
 
 
 func attack2():
-	var fireball = preload("res://Scenes/attacks/fireball.tscn").instantiate()
-	fireball.global_position = global_position
-	get_parent().add_child(fireball)
+	if attack2_lvl >= 1:
+		var fireball = preload("res://Scenes/attacks/fireball.tscn").instantiate()
+		fireball.global_position = global_position
+		get_parent().add_child(fireball)
 	
