@@ -33,11 +33,17 @@ func new_game():
 	score = 0
 	hud.update_score(score)
 
-func _on_enemy_killed(points, xp):
+func _on_enemy_killed(points, xp, heals):
 	score += points
 	hud.update_score(score)
 	hud.update_xpbar(xp)
 	player.current_xp += xp
+	if heals:
+		if player.health + 10 >= player.max_health:
+			player.health = player.max_health
+		else:
+			player.health += 10
+		player.healthbar.value += 10
 
 func _on_player_dying():
 	music.stop()
@@ -52,5 +58,4 @@ func _on_player_lvlup():
 	hud.lvlup()
 	music.playing
 	get_tree().paused = true
-
 

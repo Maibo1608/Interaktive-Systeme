@@ -174,17 +174,35 @@ shader = ExtResource("5_6cc7a")
 shader_parameter/silhouette_color = Color(0, 0, 0, 0.5)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tg74n"]
-radius = 19.0
-height = 64.0
+radius = 15.0
+height = 50.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vuybb"]
 size = Vector2(30.75, 49.625)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_443d6"]
 bg_color = Color(0.329412, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e6rld"]
 bg_color = Color(0.760784, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [sub_resource type="Animation" id="Animation_b8d8a"]
 length = 0.001
@@ -320,7 +338,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ov6qf"]
-size = Vector2(52.5385, 38)
+size = Vector2(66.9616, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yalsn"]
 animations = [{
@@ -382,25 +400,21 @@ script = ExtResource("1_jfwkt")
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"melee_attack1"
-frame = 5
-frame_progress = 1.0
+animation = &"Idle"
 
 [node name="silhouette" type="AnimatedSprite2D" parent="."]
 z_index = 100
 material = SubResource("ShaderMaterial_krh33")
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ier7n")
-animation = &"melee_attack1"
-frame = 5
-frame_progress = 1.0
+animation = &"Idle"
 
 [node name="collider" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(-6, 14)
+position = Vector2(-3, 29)
 shape = SubResource("CapsuleShape2D_tg74n")
 
 [node name="hitbox" type="Area2D" parent="."]
+visible = false
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox"]
@@ -409,9 +423,9 @@ shape = SubResource("RectangleShape2D_vuybb")
 
 [node name="Healthbar" type="ProgressBar" parent="."]
 offset_left = -74.0
-offset_top = 52.0
+offset_top = 58.0
 offset_right = 67.0
-offset_bottom = 75.0
+offset_bottom = 81.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_styles/background = SubResource("StyleBoxFlat_443d6")
@@ -453,7 +467,7 @@ collision_mask = 2
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="normal_attack/hitbox"]
-position = Vector2(-14.7308, -9)
+position = Vector2(-7.51926, -9)
 shape = SubResource("RectangleShape2D_ov6qf")
 
 [node name="attack_visual" type="AnimatedSprite2D" parent="normal_attack"]
@@ -501,6 +515,7 @@ stream = ExtResource("9_txt1r")
 
 [node name="Damage" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_u2l8c")
+volume_db = -8.0
 
 [connection signal="animation_finished" from="visuals" to="." method="_on_visuals_animation_finished"]
 [connection signal="animation_finished" from="silhouette" to="." method="_on_visuals_animation_finished"]

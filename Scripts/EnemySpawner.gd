@@ -3,7 +3,6 @@ extends Node2D
 @export var spawns: Array[Spawn_info] = []
 
 @onready var player = get_tree().get_first_node_in_group("player")
-
 signal killed()
 var time = 0
 
@@ -56,6 +55,6 @@ func get_random_position():
 	
 	
 
-func _on_enemy_killed(points, xp):
-	killed.emit(points, xp)
+func _on_enemy_killed(points, xp, heals):
+	killed.emit(points, xp, heals)
 	

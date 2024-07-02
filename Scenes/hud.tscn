@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bydfq20lrga8u"]
+[gd_scene load_steps=12 format=3 uid="uid://bydfq20lrga8u"]
 
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="1_d75b4"]
 [ext_resource type="Texture2D" uid="uid://bwo83yymfg15k" path="res://Textures/Icons/staff_01d.png" id="2_qj1rv"]
@@ -44,6 +44,11 @@ corner_radius_top_left = 2
 corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_3umv4"]
+font_size = 20
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_d75b4")
@@ -91,21 +96,45 @@ theme_override_colors/font_color = Color(0.779291, 0.779291, 0.779291, 1)
 action_mode = 0
 text = "Restart"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="stats" type="Control" parent="."]
+layout_mode = 3
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -186.0
-offset_top = 30.0
-offset_right = -45.9995
-offset_bottom = 104.0
+offset_left = -195.0
+offset_top = 12.0
+offset_right = 44.0
+offset_bottom = 183.0
 grow_horizontal = 0
+scale = Vector2(0.75, 0.75)
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+[node name="Panel" type="Panel" parent="stats"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="stats"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -98.5
+offset_top = -56.5
+offset_right = 98.5
+offset_bottom = 56.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="stats/HBoxContainer"]
 custom_minimum_size = Vector2(130, 0)
 layout_mode = 2
 
-[node name="time_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="time_label" type="Label" parent="stats/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Time:
 "
@@ -113,24 +142,24 @@ label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="score_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="score_label" type="Label" parent="stats/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Score:"
 label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="highscore_label" type="Label" parent="HBoxContainer/VBoxContainer2"]
+[node name="highscore_label" type="Label" parent="stats/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Highscore:"
 label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="stats/HBoxContainer"]
 layout_mode = 2
 
-[node name="time_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="time_value" type="Label" parent="stats/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "00:00
 "
@@ -138,14 +167,14 @@ label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="score_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="score_value" type="Label" parent="stats/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_ayadn")
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="highscore_value" type="Label" parent="HBoxContainer/VBoxContainer"]
+[node name="highscore_value" type="Label" parent="stats/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_ayadn")
@@ -163,6 +192,7 @@ offset_bottom = 45.0
 grow_horizontal = 2
 theme_override_styles/background = SubResource("StyleBoxFlat_xocui")
 theme_override_styles/fill = SubResource("StyleBoxFlat_cqo5w")
+max_value = 75.0
 step = 1.0
 show_percentage = false
 
@@ -179,7 +209,17 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "0 / 100"
+text = "0 / 75"
+
+[node name="level_label" type="Label" parent="xpbar"]
+layout_mode = 0
+offset_left = -89.0
+offset_top = -3.0
+offset_right = -2.0
+offset_bottom = 30.0
+text = "LEVEL 1"
+label_settings = SubResource("LabelSettings_3umv4")
+horizontal_alignment = 1
 
 [node name="lvlup_screen" type="Control" parent="."]
 process_mode = 2

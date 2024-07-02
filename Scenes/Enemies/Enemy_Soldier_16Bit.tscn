@@ -374,21 +374,29 @@ collision_layer = 2
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_1ayoa")
+health = 20
+dam = 30.0
+points = 400
+xp = 100
+speed = 130.0
 
 [node name="visuals" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_66c60")
-animation = &"die"
+animation = &"Idle"
+frame = 1
 
 [node name="silhouette" type="AnimatedSprite2D" parent="."]
 z_index = 100
 material = SubResource("ShaderMaterial_4tq7u")
-position = Vector2(1.78814e-07, -1.5)
-scale = Vector2(2, 2)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_uk4r3")
-animation = &"die"
+animation = &"Idle"
+frame = 1
+frame_progress = 0.821746
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(0, -4)
 scale = Vector2(1.5, 1.5)
 shape = SubResource("CapsuleShape2D_slj47")

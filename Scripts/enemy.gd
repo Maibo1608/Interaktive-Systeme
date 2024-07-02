@@ -7,7 +7,7 @@ extends RigidBody2D
 
 
 
-signal killed(points, xp)
+signal killed(points, xp, heals)
 
 var is_dying = false
 var got_hit = false
@@ -17,7 +17,8 @@ var got_hit = false
 @export var points = 100
 @export var spawn_time = 10;
 @export var xp = 50
-@export var showHealthbar = false;
+@export var isBoss = false;
+@export var heals = false
 
 @export var speed := 100.0
 #var player: CharacterBody2D
@@ -26,7 +27,7 @@ func _ready():
 	visuals.animation = "idle2"
 	visuals.play()
 	
-	if (showHealthbar == true):
+	if (isBoss == true):
 		healthbar.visible = true
 		healthbar.max_value = max_health
 		healthbar.value = health
@@ -52,18 +53,15 @@ func _physics_process(delta):
 
 func take_damage(amount: int)-> void:
 	health = health-amount
-	if (showHealthbar == true):
+	if (isBoss == true):
 		set_health_bar()
 	
 	
 	if health <= 0:
-		print("got hit, current health: ", health)
-		print("dead body")
 		is_dying = true
 		visuals.play("die")
-		killed.emit(points, xp)
+		killed.emit(points, xp, heals)
 	if health > 0: 
-		print("got hit, current health: ", health)
 		got_hit = true
 		visuals.play("hurt")
 			

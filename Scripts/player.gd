@@ -13,13 +13,14 @@ signal lvlup
 @onready var normal_attack = $normal_attack
 @onready var normal_attack_hitbox = $normal_attack/hitbox
 @onready var normal_attack_visual = $normal_attack/attack_visual
+@onready var attack2_reload = $attack2/reload
 
 var is_attacking := false
 
 #Player Stats
 var max_health = 100
 var current_xp = 0
-var xp_threshold = 100
+var xp_threshold = 50
 var current_lvl = 1
 var health = 100
 var speed = 400
@@ -40,7 +41,7 @@ func _process(delta):
 	if current_xp >= xp_threshold:
 		current_xp -= xp_threshold
 		current_lvl += 1
-		xp_threshold+=100
+		xp_threshold+=75
 		lvlup.emit()
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
@@ -89,19 +90,15 @@ func _physics_process(delta):
 func damage(value) -> void:
 	health -= value
 	healthbar.value -= value
-	print("damage", value)
 	if health <= 0:
 		dying.emit()
-		print("dead")
 	
 
 func _on_area_2d_body_entered(body):
-	if body.is_dying == false:
+	if not body.is_dying:
 		damage(body.dam)
 		damage_sound.play()
 		
-	if body.is_dying == true:
-		pass
 
 
 
@@ -109,9 +106,9 @@ func _on_area_2d_body_entered(body):
 
 
 func _on_melee_attack_1_body_entered(body):
-	body.take_damage(attack1_lvl)
-	hit.play()
-	print("hit")
+	if not body.is_dying:
+		body.take_damage(attack1_lvl)
+		hit.play()
 
 
 func attack1():
@@ -121,10 +118,11 @@ func attack1():
 
 func attack2():
 	if attack2_lvl >= 1:
-		var fireball = preload("res://Scenes/attacks/fireball.tscn").instantiate()
-		fireball.global_position = global_position
-		fireball.dmg = attack2_lvl
-		get_parent().add_child(fireball)
+		for n in floor(attack2_lvl/2)+1:
+			var fireball = preload("res://Scenes/attacks/fireball.tscn").instantiate()
+			fireball.global_position = global_position
+			fireball.dmg = attack2_lvl*2
+			get_parent().add_child(fireball)
 	
 
 
@@ -135,8 +133,9 @@ func _on_visuals_animation_finished():
 
 
 func _on_normal_attack_body_entered(body):
-	body.take_damage(1)
-	hit.play()
+	if not body.is_dying:
+		body.take_damage(1+floor(current_lvl/2))
+		hit.play()
 
 
 func _on_attack_visual_animation_finished():

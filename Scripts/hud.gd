@@ -1,12 +1,13 @@
 extends CanvasLayer
 
-@onready var time = $HBoxContainer/VBoxContainer/time_value
-@onready var score = $HBoxContainer/VBoxContainer/score_value
-@onready var highscore = $HBoxContainer/VBoxContainer/highscore_value
+@onready var time = $stats/HBoxContainer/VBoxContainer/time_value
+@onready var score = $stats/HBoxContainer/VBoxContainer/score_value
+@onready var highscore = $stats/HBoxContainer/VBoxContainer/score_value
 @onready var death_screen = $death_screen
 @onready var xpbar = $xpbar
 @onready var lvlup_screen = $lvlup_screen
 @onready var xp_label = $xpbar/xp_label
+@onready var level_label = $xpbar/level_label
 
 
 @export var player:= CharacterBody2D
@@ -24,29 +25,26 @@ func _process(delta):
 
 func update_score(value):
 	score.text = str(value)
-	print("update_score")
-	print(SaveLoad.highest_record)
 	
 func on_save_score(value):
 	if value > SaveLoad.highest_record:
 		SaveLoad.highest_record = value
 		highscore.text = str(value)
 	SaveLoad.save_score()
-	print("update_highscore")
 	
 func show_highscore():
 	highscore.text = str(SaveLoad.highest_record)
-	print("show_highscore")
 
 func update_xpbar(xp):
 	xpbar.value += xp
 	xp_label.text = "%02d / %02d" % [xpbar.value, xpbar.max_value]
 
 func lvlup():
-	xpbar.max_value = player.current_lvl * 100
+	xpbar.max_value = player.current_lvl * 75
 	xpbar.value = 0
 	xp_label.text = "%d / %d" % [xpbar.value, xpbar.max_value]
 	lvlup_screen.visible = true
+	level_label.text = "LEVEL " + str(player.current_lvl)
 	
 	
 
@@ -65,6 +63,7 @@ func _on_attack_1_pressed():
 
 func _on_attack_2_pressed():
 	player.attack2_lvl+=1
+	player.attack2_reload.wait_time = 2 - (player.attack2_lvl/5)
 	get_tree().paused = false
 	lvlup_screen.visible = false
 	$lvlup_screen/VBoxContainer/attack2.text = "FIRE STAFF - LVL %d" % [player.attack2_lvl]

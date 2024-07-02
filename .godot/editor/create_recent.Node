@@ -1,8 +1,11 @@
+TextureRect
+Label
+Panel
+Control
 AnimatedSprite2D
 Node2D
 CollisionShape2D
 Area2D
-Label
 AudioStreamPlayer
 AudioStreamPlayer2D
 Button
@@ -10,6 +13,3 @@ Timer
 Sprite2D
 MenuButton
 VBoxContainer
-Panel
-Control
-ProgressBar

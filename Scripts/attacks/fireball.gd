@@ -17,5 +17,6 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body):
-	body.take_damage(dmg)
-	queue_free()
+	if not body.is_dying:
+		body.take_damage(dmg)
+		queue_free()
