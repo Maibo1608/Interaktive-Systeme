@@ -3020,10 +3020,10 @@ enemy_spawn_delay = 5
 [sub_resource type="Resource" id="Resource_885st"]
 script = ExtResource("7_sia5l")
 time_start = 200
-time_end = 10000
+time_end = 208
 enemy = ExtResource("12_oaejx")
 enemy_num = 1
-enemy_spawn_delay = 90
+enemy_spawn_delay = 5
 
 [sub_resource type="Resource" id="Resource_2474y"]
 script = ExtResource("7_sia5l")

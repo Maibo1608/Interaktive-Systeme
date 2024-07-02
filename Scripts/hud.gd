@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @onready var time = $stats/HBoxContainer/VBoxContainer/time_value
 @onready var score = $stats/HBoxContainer/VBoxContainer/score_value
-@onready var highscore = $stats/HBoxContainer/VBoxContainer/score_value
+@onready var highscore = $stats/HBoxContainer/VBoxContainer/highscore_value
 @onready var death_screen = $death_screen
 @onready var xpbar = $xpbar
 @onready var lvlup_screen = $lvlup_screen

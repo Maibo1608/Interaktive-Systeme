@@ -11,4 +11,4 @@ res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn
 res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn
 res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
 res://Scenes/attacks/fireball.tscn
-res://Scripts/player.gd
+res://Scripts/hud.gd
