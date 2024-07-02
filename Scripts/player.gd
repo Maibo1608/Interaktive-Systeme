@@ -37,6 +37,8 @@ func _ready():
 	
 
 func _process(delta):
+	if Input.is_action_pressed("quit"):
+		get_tree().quit()
 	health_label.text = "%d / %d" % [health, max_health]
 	if current_xp >= xp_threshold:
 		current_xp -= xp_threshold
