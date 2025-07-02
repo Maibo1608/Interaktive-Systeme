@@ -58,3 +58,4 @@ func _on_player_lvlup():
 	hud.lvlup()
 	music.playing
 	get_tree().paused = true
+

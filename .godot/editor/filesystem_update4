@@ -1,9 +1,6 @@
-res://Scenes/player.tscn
-res://shaders/silhouette.gdshader
-res://Scripts/enemy.gd
-res://Scripts/menu_und_co.gd
-res://Scripts/world.gd
 res://Scenes/main_menu.tscn
+res://Scripts/enemy.gd
+res://Scenes/player.tscn
 res://Scenes/world.tscn
 res://Scenes/hud.tscn
 res://Scenes/EnemySpawner.tscn
@@ -14,3 +11,4 @@ res://Scenes/Enemies/Enemy_Soldier_16Bit.tscn
 res://Scenes/Enemies/Enemy_Skeleton_16Bit.tscn
 res://Scenes/Enemies/Enemy_Orc_Boss16Bit.tscn
 res://Scenes/attacks/fireball.tscn
+res://Scripts/hud.gd

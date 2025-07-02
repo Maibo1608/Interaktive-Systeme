@@ -1,10 +1,10 @@
 [gd_scene load_steps=52 format=3 uid="uid://dyqbfiqm0aco6"]
 
-[ext_resource type="Script" uid="uid://nxn2bmknh850" path="res://Scripts/enemy.gd" id="1_gbrf6"]
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_gbrf6"]
 [ext_resource type="Texture2D" uid="uid://os7a6fbal0m5" path="res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Idle/Idle-Sheet.png" id="2_wgjxk"]
 [ext_resource type="Texture2D" uid="uid://cbcvk8pj82t1s" path="res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Death/Death-Sheet.png" id="3_55gey"]
 [ext_resource type="Texture2D" uid="uid://yvna8raw66jy" path="res://Textures/16 Bit/Pixel Crawler - FREE - 1.8/Enemy/Orc Crew/Orc - Shaman/Run/Run-Sheet.png" id="4_r5cko"]
-[ext_resource type="Shader" uid="uid://1p1y57krag4g" path="res://shaders/silhouette.gdshader" id="6_ctjrw"]
+[ext_resource type="Shader" path="res://shaders/silhouette.gdshader" id="6_ctjrw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q2jhq"]
 atlas = ExtResource("2_wgjxk")

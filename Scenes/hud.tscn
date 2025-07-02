@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://bydfq20lrga8u"]
 
-[ext_resource type="Script" uid="uid://dj7rakdkm1nrv" path="res://Scripts/hud.gd" id="1_d75b4"]
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_d75b4"]
 [ext_resource type="Texture2D" uid="uid://bwo83yymfg15k" path="res://Textures/Icons/staff_01d.png" id="2_qj1rv"]
 [ext_resource type="Texture2D" uid="uid://c8w8pcgxmln5g" path="res://Textures/Icons/sword_02c.png" id="3_idqe1"]
 [ext_resource type="Texture2D" uid="uid://7a4f3lgnp6ny" path="res://Textures/Icons/boots_01a.png" id="3_kvfo0"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bjt8o8v77vavf"]
 
-[ext_resource type="Script" uid="uid://buwhmnvu2nmic" path="res://Scripts/main_menu.gd" id="1_xi1c6"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_xi1c6"]
 [ext_resource type="Texture2D" uid="uid://cj867lqo7muv7" path="res://Textures/Titlescreen.webp" id="2_77g13"]
 [ext_resource type="FontFile" uid="uid://0vjnj8aa71qp" path="res://KnightWarrior-w16n8.otf" id="3_lu6fr"]
 
