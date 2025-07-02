@@ -1,11 +1,11 @@
 [gd_scene load_steps=55 format=3 uid="uid://b8uuruy3hcybn"]
 
-[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_1ayoa"]
+[ext_resource type="Script" uid="uid://nxn2bmknh850" path="res://Scripts/enemy.gd" id="1_1ayoa"]
 [ext_resource type="Texture2D" uid="uid://cbtebjoo084px" path="res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Idle.png" id="2_g5xc5"]
 [ext_resource type="Texture2D" uid="uid://bwlwmlpof02uc" path="res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Death.png" id="3_u08mo"]
 [ext_resource type="Texture2D" uid="uid://bnbtpfg2gfy1k" path="res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Hurt.png" id="4_yfxbb"]
 [ext_resource type="Texture2D" uid="uid://b7lyg01mir4da" path="res://Textures/16 Bit/Soldier/Soldier with shadows/Soldier-Walk.png" id="5_x6ut8"]
-[ext_resource type="Shader" path="res://shaders/silhouette.gdshader" id="6_reov6"]
+[ext_resource type="Shader" uid="uid://1p1y57krag4g" path="res://shaders/silhouette.gdshader" id="6_reov6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rlttv"]
 atlas = ExtResource("2_g5xc5")

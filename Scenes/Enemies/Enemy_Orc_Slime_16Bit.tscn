@@ -1,11 +1,11 @@
 [gd_scene load_steps=73 format=3 uid="uid://ctdkkrxhmw0mh"]
 
-[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_gbrf6"]
+[ext_resource type="Script" uid="uid://nxn2bmknh850" path="res://Scripts/enemy.gd" id="1_gbrf6"]
 [ext_resource type="Texture2D" uid="uid://u3lgp8321g8f" path="res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_idle.png" id="2_lx1ce"]
 [ext_resource type="Texture2D" uid="uid://gjotkhp7xx1j" path="res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_death.png" id="3_wx2qs"]
 [ext_resource type="Texture2D" uid="uid://bk8krxc82s3eg" path="res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_hurt.png" id="4_4vu3d"]
 [ext_resource type="Texture2D" uid="uid://bp05leyunlbjk" path="res://Textures/16 Bit/Pixelarium - Enemy Pack1 - Free Version/Slime/Blue Slime/spr_Blue_slime_walk.png" id="5_y4n6q"]
-[ext_resource type="Shader" path="res://shaders/silhouette.gdshader" id="6_ctjrw"]
+[ext_resource type="Shader" uid="uid://1p1y57krag4g" path="res://shaders/silhouette.gdshader" id="6_ctjrw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rtg3g"]
 atlas = ExtResource("2_lx1ce")

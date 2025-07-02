@@ -33,5 +33,3 @@ func _on_start_pressed():
 
 func _on_message_timer_timeout():
 	$Message.hide()
-
-
